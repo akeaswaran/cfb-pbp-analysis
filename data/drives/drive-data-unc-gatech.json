@@ -1,0 +1,700 @@
+[
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124751",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 71,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 54
+    },
+    "end_period": 1,
+    "end_yardline": 42,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 8,
+    "yards": 29,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124752",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 55,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 10
+    },
+    "end_period": 1,
+    "end_yardline": 63,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 4,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124753",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 80,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 1
+    },
+    "end_period": 1,
+    "end_yardline": 15,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 59
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 2
+    },
+    "plays": 15,
+    "yards": 65,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124754",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 19,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 52
+    },
+    "end_period": 1,
+    "end_yardline": 46,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 27,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124755",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 86,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 5
+    },
+    "end_period": 1,
+    "end_yardline": 53,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 11,
+    "yards": 33,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124756",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 12,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 18
+    },
+    "end_period": 2,
+    "end_yardline": 47,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 35,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124757",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 68,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 25
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 30
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 55
+    },
+    "plays": 11,
+    "yards": 68,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124758",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 30
+    },
+    "end_period": 2,
+    "end_yardline": 31,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 31
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 59
+    },
+    "plays": 3,
+    "yards": 6,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124759",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 74,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 31
+    },
+    "end_period": 2,
+    "end_yardline": 66,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 7
+    },
+    "plays": 3,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247510",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 23,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "end_period": 2,
+    "end_yardline": 35,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 5,
+    "yards": 12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247511",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 61,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 30
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "seconds": 13,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 17
+    },
+    "plays": 5,
+    "yards": 61,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247512",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "seconds": 8,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 74,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 8
+    },
+    "plays": 1,
+    "yards": -1,
+    "drive_result": "END OF HALF"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247513",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 24,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 2
+    },
+    "plays": 3,
+    "yards": -1,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247514",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 67,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 22,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 13
+    },
+    "plays": 9,
+    "yards": 45,
+    "drive_result": "MISSED FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247515",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 22,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "end_period": 3,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 7,
+      "seconds": 29
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 18
+    },
+    "plays": 5,
+    "yards": 78,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247516",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 71,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 21
+    },
+    "end_period": 3,
+    "end_yardline": 68,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 24
+    },
+    "plays": 3,
+    "yards": 3,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247517",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 32,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "end_period": 3,
+    "end_yardline": 34,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 2,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247518",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 77,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 28
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 14,
+      "seconds": 18
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 10
+    },
+    "plays": 14,
+    "yards": 77,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247519",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 27,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 11
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 25
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 46
+    },
+    "plays": 5,
+    "yards": 73,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247520",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 87,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 19
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 53
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 26
+    },
+    "plays": 6,
+    "yards": 87,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247521",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 30,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "end_period": 4,
+    "end_yardline": 30,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 0,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247522",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 72,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 21
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "plays": 10,
+    "yards": 72,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247523",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 32,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 16
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 1,
+      "seconds": 45
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 31
+    },
+    "plays": 5,
+    "yards": 68,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247524",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 45,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 43
+    },
+    "end_period": 4,
+    "end_yardline": 45,
+    "end_time": {
+      "seconds": 36,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 7
+    },
+    "plays": 3,
+    "yards": 0,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247525",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 23,
+    "start_time": {
+      "seconds": 36,
+      "minutes": 0
+    },
+    "end_period": 4,
+    "end_yardline": 32,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 2,
+    "yards": 9,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247526",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 62,
+    "start_time": {
+      "seconds": 23,
+      "minutes": 0
+    },
+    "end_period": 4,
+    "end_yardline": 64,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 23
+    },
+    "plays": 1,
+    "yards": -2,
+    "drive_result": "END OF GAME"
+  }
+]

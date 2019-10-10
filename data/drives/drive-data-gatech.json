@@ -1,0 +1,3293 @@
+[
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116531",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 35,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 1,
+    "end_yardline": 42,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 42
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 18
+    },
+    "plays": 3,
+    "yards": 7,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116532",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 84,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 42
+    },
+    "end_period": 1,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 11,
+      "seconds": 52
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 50
+    },
+    "plays": 5,
+    "yards": 16,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116533",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 11,
+      "seconds": 52
+    },
+    "end_period": 1,
+    "end_yardline": 58,
+    "end_time": {
+      "minutes": 7,
+      "seconds": 59
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 53
+    },
+    "plays": 8,
+    "yards": 17,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116534",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 15,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 59
+    },
+    "end_period": 1,
+    "end_yardline": 27,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 48
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 11
+    },
+    "plays": 4,
+    "yards": 26,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116535",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 41,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 48
+    },
+    "end_period": 1,
+    "end_yardline": 36,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 7
+    },
+    "elapsed": {
+      "seconds": 41
+    },
+    "plays": 3,
+    "yards": 5,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116536",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 20,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 7
+    },
+    "end_period": 1,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 39
+    },
+    "elapsed": {
+      "seconds": 28
+    },
+    "plays": 1,
+    "yards": 80,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116537",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 86,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 39
+    },
+    "end_period": 1,
+    "end_yardline": 45,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 33
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 6
+    },
+    "plays": 4,
+    "yards": 41,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116538",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 7,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 33
+    },
+    "end_period": 2,
+    "end_yardline": 48,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 36
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 57
+    },
+    "plays": 10,
+    "yards": 41,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "4011116539",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 91,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 36
+    },
+    "end_period": 2,
+    "end_yardline": 82,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 49
+    },
+    "elapsed": {
+      "seconds": 47
+    },
+    "plays": 3,
+    "yards": 5,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "4011124411",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 27,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 52
+    },
+    "end_period": 1,
+    "end_yardline": 35,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 43
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 9
+    },
+    "plays": 3,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "4011124412",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 86,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 43
+    },
+    "end_period": 1,
+    "end_yardline": 73,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 6,
+    "yards": 13,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "4011124413",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 29,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 32
+    },
+    "end_period": 1,
+    "end_yardline": 66,
+    "end_time": {
+      "minutes": 7,
+      "seconds": 8
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "plays": 9,
+    "yards": 37,
+    "drive_result": "MISSED FG"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "4011124414",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 66,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 8
+    },
+    "end_period": 1,
+    "end_yardline": 10,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 40
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 28
+    },
+    "plays": 9,
+    "yards": 56,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "4011124415",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 27,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 34
+    },
+    "end_period": 1,
+    "end_yardline": 39,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 5,
+    "yards": 12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "4011124416",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 94,
+    "start_time": {
+      "seconds": 46,
+      "minutes": 0
+    },
+    "end_period": 1,
+    "end_yardline": 86,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "4011124417",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 57,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 5
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 11,
+      "seconds": 3
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 2
+    },
+    "plays": 7,
+    "yards": 43,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "4011124418",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 70,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 56
+    },
+    "end_period": 2,
+    "end_yardline": 53,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 6,
+    "yards": 17,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "4011124419",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 20,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 22
+    },
+    "end_period": 2,
+    "end_yardline": 24,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 4,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "4011124521",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 1,
+    "end_yardline": 75,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 46
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 14
+    },
+    "plays": 3,
+    "yards": 0,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "4011124522",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 31,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 46
+    },
+    "end_period": 1,
+    "end_yardline": 64,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 48
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 58
+    },
+    "plays": 4,
+    "yards": 33,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "4011124523",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 80,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 48
+    },
+    "end_period": 1,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 55
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 53
+    },
+    "plays": 9,
+    "yards": 80,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "4011124524",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 45,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 45
+    },
+    "end_period": 1,
+    "end_yardline": 55,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 6,
+    "yards": 10,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "4011124525",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 87,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 40
+    },
+    "end_period": 1,
+    "end_yardline": 79,
+    "end_time": {
+      "minutes": 1,
+      "seconds": 34
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 6
+    },
+    "plays": 3,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "4011124526",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 29,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 34
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 49
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 45
+    },
+    "plays": 8,
+    "yards": 71,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "4011124527",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 49
+    },
+    "end_period": 2,
+    "end_yardline": 42,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 10,
+    "yards": 33,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "4011124528",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 28,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 39
+    },
+    "end_period": 2,
+    "end_yardline": 26,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": -2,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "4011124529",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 67,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 30
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "seconds": 15,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 15
+    },
+    "plays": 13,
+    "yards": 67,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "4011124691",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 35,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 1,
+    "end_yardline": 90,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 18
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 42
+    },
+    "plays": 8,
+    "yards": 55,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "4011124692",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 80,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 18
+    },
+    "end_period": 1,
+    "end_yardline": 75,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 34
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 44
+    },
+    "plays": 3,
+    "yards": 5,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "4011124693",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 45,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 34
+    },
+    "end_period": 1,
+    "end_yardline": 47,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 2,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "4011124694",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 79,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 23
+    },
+    "end_period": 1,
+    "end_yardline": 33,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 5,
+    "yards": 46,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "4011124695",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 33,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 11
+    },
+    "end_period": 1,
+    "end_yardline": 45,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 7
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 4
+    },
+    "plays": 5,
+    "yards": 12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "4011124696",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 85,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 7
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 56
+    },
+    "elapsed": {
+      "minutes": 6,
+      "seconds": 11
+    },
+    "plays": 15,
+    "yards": 85,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "4011124697",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 20,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 56
+    },
+    "end_period": 2,
+    "end_yardline": 38,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 6,
+    "yards": 18,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "4011124698",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 11,
+      "seconds": 40
+    },
+    "end_period": 2,
+    "end_yardline": 72,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 3,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "4011124699",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 42,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 22
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 53
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 29
+    },
+    "plays": 9,
+    "yards": 58,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124751",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 71,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 54
+    },
+    "end_period": 1,
+    "end_yardline": 42,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 8,
+    "yards": 29,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124752",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 55,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 10
+    },
+    "end_period": 1,
+    "end_yardline": 63,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 4,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124753",
+    "scoring": true,
+    "start_period": 1,
+    "start_yardline": 80,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 1
+    },
+    "end_period": 1,
+    "end_yardline": 15,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 59
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 2
+    },
+    "plays": 15,
+    "yards": 65,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124754",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 19,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 52
+    },
+    "end_period": 1,
+    "end_yardline": 46,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 27,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124755",
+    "scoring": false,
+    "start_period": 1,
+    "start_yardline": 86,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 5
+    },
+    "end_period": 1,
+    "end_yardline": 53,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 11,
+    "yards": 33,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124756",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 12,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 18
+    },
+    "end_period": 2,
+    "end_yardline": 47,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 35,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124757",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 68,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 25
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 30
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 55
+    },
+    "plays": 11,
+    "yards": 68,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124758",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 30
+    },
+    "end_period": 2,
+    "end_yardline": 31,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 31
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 59
+    },
+    "plays": 3,
+    "yards": 6,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "4011124759",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 74,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 31
+    },
+    "end_period": 2,
+    "end_yardline": 66,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 7
+    },
+    "plays": 3,
+    "yards": 8,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165310",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 86,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 49
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 45
+    },
+    "elapsed": {
+      "seconds": 4
+    },
+    "plays": 1,
+    "yards": 14,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165311",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 45
+    },
+    "end_period": 2,
+    "end_yardline": 36,
+    "end_time": {
+      "minutes": 8,
+      "seconds": 56
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 49
+    },
+    "plays": 8,
+    "yards": 39,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165312",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 36,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 56
+    },
+    "end_period": 2,
+    "end_yardline": 39,
+    "end_time": {
+      "minutes": 8,
+      "seconds": 19
+    },
+    "elapsed": {
+      "seconds": 37
+    },
+    "plays": 2,
+    "yards": 3,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165313",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 2,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 19
+    },
+    "end_period": 2,
+    "end_yardline": 1,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 35
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 44
+    },
+    "plays": 4,
+    "yards": 1,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165314",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 6,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 35
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 34
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 1
+    },
+    "plays": 5,
+    "yards": 94,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165315",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 34
+    },
+    "end_period": 2,
+    "end_yardline": 71,
+    "end_time": {
+      "minutes": 2,
+      "seconds": 12
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 22
+    },
+    "plays": 5,
+    "yards": 4,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165316",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 20,
+    "start_time": {
+      "minutes": 2,
+      "seconds": 12
+    },
+    "end_period": 2,
+    "end_yardline": 40,
+    "end_time": {
+      "minutes": 1,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 12
+    },
+    "plays": 4,
+    "yards": 20,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165317",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 0
+    },
+    "end_period": 2,
+    "end_yardline": 74,
+    "end_time": {
+      "seconds": 32,
+      "minutes": 0
+    },
+    "elapsed": {
+      "seconds": 28
+    },
+    "plays": 3,
+    "yards": 1,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165318",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 32,
+    "start_time": {
+      "seconds": 32,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 32,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 32
+    },
+    "plays": 4,
+    "yards": 0,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165320",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 86,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 11
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 49
+    },
+    "plays": 3,
+    "yards": -11,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165321",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 40,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 11
+    },
+    "end_period": 3,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 42
+    },
+    "elapsed": {
+      "seconds": 29
+    },
+    "plays": 2,
+    "yards": 60,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165322",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 42
+    },
+    "end_period": 3,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 11,
+      "seconds": 40
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 2
+    },
+    "plays": 3,
+    "yards": 75,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165323",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 23,
+    "start_time": {
+      "minutes": 11,
+      "seconds": 40
+    },
+    "end_period": 3,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 8,
+      "seconds": 8
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 32
+    },
+    "plays": 8,
+    "yards": 77,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165324",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 84,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 8
+    },
+    "end_period": 3,
+    "end_yardline": 73,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 21
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 47
+    },
+    "plays": 4,
+    "yards": 11,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165325",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 79,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 21
+    },
+    "end_period": 3,
+    "end_yardline": 85,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 23
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 58
+    },
+    "plays": 4,
+    "yards": 6,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165326",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 85,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 23
+    },
+    "end_period": 3,
+    "end_yardline": 81,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 7
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 16
+    },
+    "plays": 3,
+    "yards": 4,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165327",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 33,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 7
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 14,
+      "seconds": 54
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 13
+    },
+    "plays": 7,
+    "yards": 67,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165328",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 90,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 54
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 33
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 21
+    },
+    "plays": 9,
+    "yards": 90,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165329",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 33
+    },
+    "end_period": 4,
+    "end_yardline": 66,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 11
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 22
+    },
+    "plays": 9,
+    "yards": 41,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Clemson",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165330",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 11
+    },
+    "end_period": 4,
+    "end_yardline": 68,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 48
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 23
+    },
+    "plays": 3,
+    "yards": 7,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Clemson",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401111653,
+    "id": "40111165331",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 35,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 48
+    },
+    "end_period": 4,
+    "end_yardline": 66,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 51
+    },
+    "plays": 9,
+    "yards": 31,
+    "drive_result": "Uncategorized"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244111",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 56,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 54
+    },
+    "end_period": 2,
+    "end_yardline": 60,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 4,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244112",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 78,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 40
+    },
+    "end_period": 2,
+    "end_yardline": 90,
+    "end_time": {
+      "minutes": 4,
+      "seconds": 12
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 28
+    },
+    "plays": 3,
+    "yards": -12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244113",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 24,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 12
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "seconds": 53,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 19
+    },
+    "plays": 9,
+    "yards": 76,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244114",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 72,
+    "start_time": {
+      "seconds": 46,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 43,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 46
+    },
+    "plays": 4,
+    "yards": 29,
+    "drive_result": "END OF HALF"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244115",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 78,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 69,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 53
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 7
+    },
+    "plays": 3,
+    "yards": 9,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244116",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 19,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 53
+    },
+    "end_period": 3,
+    "end_yardline": 45,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 8,
+    "yards": 26,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244117",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 88,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 37
+    },
+    "end_period": 3,
+    "end_yardline": 44,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 10,
+    "yards": 44,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244118",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 6,
+    "start_time": {
+      "minutes": 2,
+      "seconds": 27
+    },
+    "end_period": 3,
+    "end_yardline": 17,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 4,
+    "yards": 11,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244119",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 16
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 14,
+      "seconds": 53
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 23
+    },
+    "plays": 3,
+    "yards": 25,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244120",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 53
+    },
+    "end_period": 4,
+    "end_yardline": 55,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 30,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244121",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 55,
+    "start_time": {
+      "minutes": 11,
+      "seconds": 33
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 3
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 30
+    },
+    "plays": 4,
+    "yards": 55,
+    "drive_result": "FUMBLE"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244122",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 0,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 3
+    },
+    "end_period": 4,
+    "end_yardline": 53,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 6,
+    "yards": 53,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "South Florida",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112441,
+    "id": "40111244123",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 94,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 16
+    },
+    "end_period": 4,
+    "end_yardline": 77,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 5,
+    "yards": 17,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "South Florida",
+    "defense_conference": "American Athletic",
+    "game_id": 401112441,
+    "id": "40111244124",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 19,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 23
+    },
+    "end_period": 4,
+    "end_yardline": 47,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 23
+    },
+    "plays": 7,
+    "yards": 28,
+    "drive_result": "END OF GAME"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245210",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 35,
+    "start_time": {
+      "seconds": 5,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 33,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 5
+    },
+    "plays": 1,
+    "yards": -2,
+    "drive_result": "END OF HALF"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245211",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 43,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 53
+    },
+    "end_period": 3,
+    "end_yardline": 45,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 2,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "40111245212",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 96,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 5
+    },
+    "end_period": 3,
+    "end_yardline": 87,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 9,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245213",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 67,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 57
+    },
+    "end_period": 3,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 50
+    },
+    "elapsed": {
+      "seconds": 7
+    },
+    "plays": 1,
+    "yards": 33,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "40111245214",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 50
+    },
+    "end_period": 3,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 6,
+      "seconds": 5
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 45
+    },
+    "plays": 9,
+    "yards": 75,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245215",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 5
+    },
+    "end_period": 3,
+    "end_yardline": 76,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 8,
+    "yards": 51,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "40111245216",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 76,
+    "start_time": {
+      "minutes": 2,
+      "seconds": 27
+    },
+    "end_period": 4,
+    "end_yardline": 33,
+    "end_time": {
+      "minutes": 8,
+      "seconds": 46
+    },
+    "elapsed": {
+      "minutes": 8,
+      "seconds": 41
+    },
+    "plays": 13,
+    "yards": 43,
+    "drive_result": "MISSED FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245217",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 33,
+    "start_time": {
+      "minutes": 8,
+      "seconds": 46
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 7,
+      "seconds": 29
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 17
+    },
+    "plays": 4,
+    "yards": 67,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "40111245218",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 29
+    },
+    "end_period": 4,
+    "end_yardline": 30,
+    "end_time": {
+      "minutes": 1,
+      "seconds": 51
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 38
+    },
+    "plays": 11,
+    "yards": 45,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "The Citadel",
+    "defense_conference": null,
+    "game_id": 401112452,
+    "id": "40111245219",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 39
+    },
+    "end_period": 4,
+    "end_yardline": 75,
+    "end_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 39
+    },
+    "plays": 10,
+    "yards": 0,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "The Citadel",
+    "offense_conference": null,
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112452,
+    "id": "40111245220",
+    "scoring": true,
+    "start_period": 5,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "end_period": 6,
+    "end_yardline": 20,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 15
+    },
+    "plays": 4,
+    "yards": 5,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246910",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 84,
+    "start_time": {
+      "minutes": 6,
+      "seconds": 46
+    },
+    "end_period": 2,
+    "end_yardline": 79,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 27
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 19
+    },
+    "plays": 3,
+    "yards": 5,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246911",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 27,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 27
+    },
+    "end_period": 2,
+    "end_yardline": 100,
+    "end_time": {
+      "seconds": 8,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 19
+    },
+    "plays": 13,
+    "yards": 73,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246912",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "seconds": 8,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 77,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 8
+    },
+    "plays": 1,
+    "yards": -2,
+    "drive_result": "END OF HALF"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246913",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 71,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 26,
+    "end_time": {
+      "minutes": 10,
+      "seconds": 33
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 27
+    },
+    "plays": 8,
+    "yards": 45,
+    "drive_result": "FUMBLE TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246915",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 10,
+      "seconds": 33
+    },
+    "end_period": 3,
+    "end_yardline": 46,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 14
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 19
+    },
+    "plays": 6,
+    "yards": 29,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246916",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 1,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 14
+    },
+    "end_period": 3,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 9
+    },
+    "elapsed": {
+      "seconds": 5
+    },
+    "plays": 1,
+    "yards": -1,
+    "drive_result": "SF"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246917",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 75,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 1
+    },
+    "end_period": 3,
+    "end_yardline": 87,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": -12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246918",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 37,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 84,
+    "end_time": {
+      "seconds": 55,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 6,
+      "seconds": 5
+    },
+    "plays": 11,
+    "yards": 47,
+    "drive_result": "FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246919",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 81,
+    "start_time": {
+      "seconds": 48,
+      "minutes": 0
+    },
+    "end_period": 3,
+    "end_yardline": 50,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 31,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246920",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 13,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 55
+    },
+    "end_period": 4,
+    "end_yardline": 17,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 34
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 21
+    },
+    "plays": 3,
+    "yards": 4,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246921",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 56,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 34
+    },
+    "end_period": 4,
+    "end_yardline": 14,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 9,
+    "yards": 42,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246922",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 65,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 41
+    },
+    "end_period": 4,
+    "end_yardline": 61,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 4,
+    "yards": -4,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "Temple",
+    "defense_conference": "American Athletic",
+    "game_id": 401112469,
+    "id": "40111246923",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 61,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 46
+    },
+    "end_period": 4,
+    "end_yardline": 13,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 7,
+    "yards": 48,
+    "drive_result": "DOWNS"
+  },
+  {
+    "offense": "Temple",
+    "offense_conference": "American Athletic",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112469,
+    "id": "40111246924",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 13,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 32
+    },
+    "end_period": 4,
+    "end_yardline": 59,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 32
+    },
+    "plays": 9,
+    "yards": 46,
+    "drive_result": "END OF GAME"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247510",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 23,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "end_period": 2,
+    "end_yardline": 35,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 5,
+    "yards": 12,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247511",
+    "scoring": true,
+    "start_period": 2,
+    "start_yardline": 61,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 30
+    },
+    "end_period": 2,
+    "end_yardline": 0,
+    "end_time": {
+      "seconds": 13,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 17
+    },
+    "plays": 5,
+    "yards": 61,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247512",
+    "scoring": false,
+    "start_period": 2,
+    "start_yardline": 75,
+    "start_time": {
+      "seconds": 8,
+      "minutes": 0
+    },
+    "end_period": 2,
+    "end_yardline": 74,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 8
+    },
+    "plays": 1,
+    "yards": -1,
+    "drive_result": "END OF HALF"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247513",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 25,
+    "start_time": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 24,
+    "end_time": {
+      "minutes": 13,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 2
+    },
+    "plays": 3,
+    "yards": -1,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247514",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 67,
+    "start_time": {
+      "minutes": 13,
+      "seconds": 0
+    },
+    "end_period": 3,
+    "end_yardline": 22,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 13
+    },
+    "plays": 9,
+    "yards": 45,
+    "drive_result": "MISSED FG"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247515",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 22,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "end_period": 3,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 7,
+      "seconds": 29
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 18
+    },
+    "plays": 5,
+    "yards": 78,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247516",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 71,
+    "start_time": {
+      "minutes": 7,
+      "seconds": 21
+    },
+    "end_period": 3,
+    "end_yardline": 68,
+    "end_time": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 24
+    },
+    "plays": 3,
+    "yards": 3,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247517",
+    "scoring": false,
+    "start_period": 3,
+    "start_yardline": 32,
+    "start_time": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "end_period": 3,
+    "end_yardline": 34,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 2,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247518",
+    "scoring": true,
+    "start_period": 3,
+    "start_yardline": 77,
+    "start_time": {
+      "minutes": 4,
+      "seconds": 28
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 14,
+      "seconds": 18
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 10
+    },
+    "plays": 14,
+    "yards": 77,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247519",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 27,
+    "start_time": {
+      "minutes": 14,
+      "seconds": 11
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 12,
+      "seconds": 25
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 46
+    },
+    "plays": 5,
+    "yards": 73,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247520",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 87,
+    "start_time": {
+      "minutes": 12,
+      "seconds": 19
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 9,
+      "seconds": 53
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 26
+    },
+    "plays": 6,
+    "yards": 87,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247521",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 30,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 47
+    },
+    "end_period": 4,
+    "end_yardline": 30,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 3,
+    "yards": 0,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247522",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 72,
+    "start_time": {
+      "minutes": 9,
+      "seconds": 21
+    },
+    "end_period": 4,
+    "end_yardline": 0,
+    "end_time": {
+      "minutes": 3,
+      "seconds": 24
+    },
+    "elapsed": {
+      "minutes": 5,
+      "seconds": 57
+    },
+    "plays": 10,
+    "yards": 72,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247523",
+    "scoring": true,
+    "start_period": 4,
+    "start_yardline": 32,
+    "start_time": {
+      "minutes": 3,
+      "seconds": 16
+    },
+    "end_period": 4,
+    "end_yardline": 100,
+    "end_time": {
+      "minutes": 1,
+      "seconds": 45
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 31
+    },
+    "plays": 5,
+    "yards": 68,
+    "drive_result": "TD"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247524",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 45,
+    "start_time": {
+      "minutes": 1,
+      "seconds": 43
+    },
+    "end_period": 4,
+    "end_yardline": 45,
+    "end_time": {
+      "seconds": 36,
+      "minutes": 0
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 7
+    },
+    "plays": 3,
+    "yards": 0,
+    "drive_result": "PUNT"
+  },
+  {
+    "offense": "Georgia Tech",
+    "offense_conference": "ACC",
+    "defense": "North Carolina",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247525",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 23,
+    "start_time": {
+      "seconds": 36,
+      "minutes": 0
+    },
+    "end_period": 4,
+    "end_yardline": 32,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {},
+    "plays": 2,
+    "yards": 9,
+    "drive_result": "INT"
+  },
+  {
+    "offense": "North Carolina",
+    "offense_conference": "ACC",
+    "defense": "Georgia Tech",
+    "defense_conference": "ACC",
+    "game_id": 401112475,
+    "id": "40111247526",
+    "scoring": false,
+    "start_period": 4,
+    "start_yardline": 62,
+    "start_time": {
+      "seconds": 23,
+      "minutes": 0
+    },
+    "end_period": 4,
+    "end_yardline": 64,
+    "end_time": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "seconds": 23
+    },
+    "plays": 1,
+    "yards": -2,
+    "drive_result": "END OF GAME"
+  }
+]

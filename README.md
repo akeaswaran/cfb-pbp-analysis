@@ -15,6 +15,7 @@ After cloning the repo, you'll probably want to create a folder structure under 
     - drives
     - pbp
     - teams
+ - results
 ```
 
 Download the requisite files using the [exporter on CollegeFootballData.com](https://collegefootballdata.com/exporter) or via [the API](https://api.collegefootballdata.com). Do note that the API returns JSON and the exporter returns CSV, BUT the file import code in this repo usually expects CSV.

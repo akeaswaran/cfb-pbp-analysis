@@ -22,7 +22,7 @@ Download the requisite files using the [exporter on CollegeFootballData.com](htt
 
 From either source, you're looking for game, drive, and play-by-play data from 2012 to 2019. Each download will take longer than the last, so keep that in mind.
 
-Once you have all of those files downloaded, pull down the latest list of teams as well.
+Once you have all of those files downloaded, download a CSV of the latest list of teams as well.
 
 Put all of these files in the requisite folders in the structure, naming them `<year>.csv`. **Note: The teams one specifically will have to be named `2018.csv`.**
 

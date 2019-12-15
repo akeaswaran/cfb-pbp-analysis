@@ -24,7 +24,7 @@ From either source, you're looking for game, drive, and play-by-play data from 2
 
 Once you have all of those files downloaded, download a CSV of the latest list of teams as well.
 
-Put all of these files in the requisite folders in the structure, naming them `<year>.csv`. **Note: The teams one specifically will have to be named `2018.csv`.**
+Put all of these files in the requisite folders in the structure, naming them `<year>.csv`. **Note: The teams one specifically will have to be named `2019.csv`.**
 
 Once you do that, you are probably good to open any of the notebooks and run the cells.
 

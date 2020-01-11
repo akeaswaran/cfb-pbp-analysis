@@ -15,6 +15,7 @@ After cloning the repo, you'll probably want to create a folder structure under 
     - drives
     - pbp
     - teams
+    - lines
  - results
 ```
 

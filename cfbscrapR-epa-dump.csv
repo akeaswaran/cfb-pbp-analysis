@@ -1,0 +1,45 @@
+"","play_type","avg_EPA"
+"1","Blocked Field Goal",-2.86402643674793
+"2","Blocked Field Goal Touchdown",-8.88080385768832
+"3","Blocked Punt",-2.74796973360893
+"4","Blocked Punt (Safety)",0.391430427290182
+"5","Blocked Punt Touchdown",-5.25650893276988
+"6","Coin Toss",NA
+"7","Defensive 2pt Conversion",-2
+"8","End of Game",-1.06085007135514
+"9","End of Half",NA
+"10","End Period",NA
+"11","Field Goal Good",0.991371353587879
+"12","Field Goal Missed",-2.36473502106742
+"13","Fumble Recovery (Opponent)",-4.55373321914735
+"14","Fumble Recovery (Opponent) Touchdown",-7.33649409966894
+"15","Fumble Recovery (Own)",-0.986510389946816
+"16","Fumble Return Touchdown",-8.02744380920829
+"17","Interception Return",-3.81125521385792
+"18","Interception Return Touchdown",-7.75546823091566
+"19","Kickoff",0.0847566752971879
+"20","Kickoff (Safety)",-2.83370417649948
+"21","Kickoff Return (Offense)",0.0199492346073212
+"22","Kickoff Return Touchdown",6.08883145374741
+"23","Kickoff Team Fumble Recovery",-4.51000135195359
+"24","Missed Field Goal Return",-1.78870680277244
+"25","Missed Field Goal Return Touchdown",-9.07810532466845
+"26","Pass Completion",-0.483800152342803
+"27","Pass Incompletion",-0.983844103282966
+"28","Pass Reception",0.804286284664182
+"29","Passing Touchdown",3.51117969351936
+"30","Penalty",-0.0112222281857197
+"31","Penalty (Safety)",-1.87496357312233
+"32","placeholder",0
+"33","Punt",2.40759402426494
+"34","Punt (Safety)",3.52722403614654
+"35","Punt Return Touchdown",-4.82026479894253
+"36","Punt Team Fumble Recovery",4.97331077074757
+"37","Punt Team Fumble Recovery Touchdown",7.51957173868811
+"38","Rush",-0.065453287862349
+"39","Rushing Touchdown",2.2689456892149
+"40","Sack",-1.63484534890608
+"41","Safety",-0.854342284224801
+"42","Timeout",-0.017105502259918
+"43","Two Point Rush",NA
+"44","Uncategorized",0.341199219470064

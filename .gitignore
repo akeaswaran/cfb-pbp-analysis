@@ -21,3 +21,4 @@ ipython_config.py
 
 data/*
 results/box-scores.csv
+results/base-epa.csv

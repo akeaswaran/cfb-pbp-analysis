@@ -1,0 +1,712 @@
+[
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 676497.375, "cover": 169129.75, "children": [
+    { "nodeid": 1, "leaf": -0.399995297 , "cover": 84944.25 }, 
+    { "nodeid": 2, "leaf": 0.399995267 , "cover": 84185.5 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 453387.219, "cover": 162511.797, "children": [
+    { "nodeid": 1, "leaf": -0.33406052 , "cover": 81669.2734 }, 
+    { "nodeid": 2, "leaf": 0.33406049 , "cover": 80842.5234 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 325106.688, "cover": 148438.078, "children": [
+    { "nodeid": 1, "leaf": -0.295987725 , "cover": 74618.625 }, 
+    { "nodeid": 2, "leaf": 0.295987695 , "cover": 73819.4531 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 241609.5, "cover": 131213.156, "children": [
+    { "nodeid": 1, "leaf": -0.271394163 , "cover": 65936.0547 }, 
+    { "nodeid": 2, "leaf": 0.271394134 , "cover": 65277.1016 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.37709779e-05, "yes": 1, "no": 2, "missing": 1 , "gain": 64999.9531, "cover": 113769.852, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -7, "yes": 3, "no": 4, "missing": 3 , "gain": 6473.46875, "cover": 54526.3945, "children": [
+      { "nodeid": 3, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00859615952, "yes": 7, "no": 8, "missing": 7 , "gain": 743.089844, "cover": 31022.332, "children": [
+        { "nodeid": 7, "depth": 3, "split": "pos_score_diff_start", "split_condition": -14, "yes": 15, "no": 16, "missing": 15 , "gain": 82.0136719, "cover": 19854.1504, "children": [
+          { "nodeid": 15, "leaf": -0.24848412 , "cover": 15675.8789 }, 
+          { "nodeid": 16, "leaf": -0.2166733 , "cover": 4178.27246 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "pos_score_diff_start", "split_condition": -12, "yes": 17, "no": 18, "missing": 17 , "gain": 173.325195, "cover": 11168.1807, "children": [
+          { "nodeid": 17, "leaf": -0.201250896 , "cover": 5804.71631 }, 
+          { "nodeid": 18, "leaf": -0.151272535 , "cover": 5363.46436 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00132855959, "yes": 9, "no": 10, "missing": 9 , "gain": 795, "cover": 23504.0645, "children": [
+        { "nodeid": 9, "depth": 3, "split": "is_home", "yes": 20, "no": 19 , "gain": 267.634277, "cover": 13738.1709, "children": [
+          { "nodeid": 19, "leaf": -0.134780571 , "cover": 7802.28955 }, 
+          { "nodeid": 20, "leaf": -0.0784004256 , "cover": 5935.88135 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "is_home", "yes": 22, "no": 21 , "gain": 402.918488, "cover": 9765.89453, "children": [
+          { "nodeid": 21, "leaf": -0.0735716522 , "cover": 5235.1582 }, 
+          { "nodeid": 22, "leaf": 0.00788332988 , "cover": 4530.73584 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": 5, "yes": 5, "no": 6, "missing": 5 , "gain": 8635.28906, "cover": 59243.4531, "children": [
+      { "nodeid": 5, "depth": 2, "split": "is_home", "yes": 12, "no": 11 , "gain": 929.676514, "cover": 26194.9609, "children": [
+        { "nodeid": 11, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0021324181, "yes": 23, "no": 24, "missing": 23 , "gain": 657.063599, "cover": 12089.5293, "children": [
+          { "nodeid": 23, "leaf": -0.0126107652 , "cover": 8524.87305 }, 
+          { "nodeid": 24, "leaf": 0.0896331966 , "cover": 3564.65649 }
+        ]}, 
+        { "nodeid": 12, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.000725492835, "yes": 25, "no": 26, "missing": 25 , "gain": 168.328125, "cover": 14105.4316, "children": [
+          { "nodeid": 25, "leaf": 0.0594321601 , "cover": 4180.12207 }, 
+          { "nodeid": 26, "leaf": 0.107303061 , "cover": 9925.30957 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00848293398, "yes": 13, "no": 14, "missing": 13 , "gain": 970.910156, "cover": 33048.4922, "children": [
+        { "nodeid": 13, "depth": 3, "split": "pos_score_diff_start", "split_condition": 10, "yes": 27, "no": 28, "missing": 27 , "gain": 211.834961, "cover": 12924.1074, "children": [
+          { "nodeid": 27, "leaf": 0.148772746 , "cover": 7916.47021 }, 
+          { "nodeid": 28, "leaf": 0.201415807 , "cover": 5007.6377 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "pos_score_diff_start", "split_condition": 11, "yes": 29, "no": 30, "missing": 29 , "gain": 112.128906, "cover": 20124.3848, "children": [
+          { "nodeid": 29, "leaf": 0.2081462 , "cover": 3765.10327 }, 
+          { "nodeid": 30, "leaf": 0.246666431 , "cover": 16359.2812 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 164841.531, "cover": 106135.32, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -3, "yes": 3, "no": 4, "missing": 3 , "gain": 38.546875, "cover": 53296.5586, "children": [
+      { "nodeid": 3, "depth": 2, "split": "pos_score_diff_start", "split_condition": -7, "yes": 7, "no": 8, "missing": 7 , "gain": 4.39453125, "cover": 35308.9922, "children": [
+        { "nodeid": 7, "leaf": -0.243674561 , "cover": 25266.707 }, 
+        { "nodeid": 8, "leaf": -0.249405548 , "cover": 10042.2832 }
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "pos_score_diff_start", "split_condition": 5, "yes": 9, "no": 10, "missing": 9 , "gain": 4.10351562, "cover": 17987.5664, "children": [
+        { "nodeid": 9, "leaf": -0.255285352 , "cover": 14949.4551 }, 
+        { "nodeid": 10, "leaf": -0.264831275 , "cover": 3038.11133 }
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": 5, "yes": 5, "no": 6, "missing": 5 , "gain": 36.296875, "cover": 52838.7617, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": -3, "yes": 11, "no": 12, "missing": 11 , "gain": 9.015625, "cover": 26243.2383, "children": [
+        { "nodeid": 11, "leaf": 0.261162221 , "cover": 7242.10498 }, 
+        { "nodeid": 12, "leaf": 0.252154559 , "cover": 19001.1328 }
+      ]}, 
+      { "nodeid": 6, "leaf": 0.243944407 , "cover": 26595.5234 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000239325309, "yes": 1, "no": 2, "missing": 1 , "gain": 35660.543, "cover": 90493.8281, "children": [
+    { "nodeid": 1, "depth": 1, "split": "spread_time", "split_condition": -0.407312036, "yes": 3, "no": 4, "missing": 4 , "gain": 6686.75195, "cover": 40915.6562, "children": [
+      { "nodeid": 3, "depth": 2, "split": "spread_time", "split_condition": -3.12023115, "yes": 7, "no": 8, "missing": 8 , "gain": 773.129456, "cover": 7999.58398, "children": [
+        { "nodeid": 7, "depth": 3, "split": "spread_time", "split_condition": -6.54722691, "yes": 15, "no": 16, "missing": 16 , "gain": 102.033691, "cover": 2648.04712, "children": [
+          { "nodeid": 15, "leaf": 0.154817536 , "cover": 1242.41809 }, 
+          { "nodeid": 16, "leaf": 0.0760569349 , "cover": 1405.62891 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "pos_score_diff_start", "split_condition": -10, "yes": 17, "no": 18, "missing": 17 , "gain": 359.947174, "cover": 5351.53662, "children": [
+          { "nodeid": 17, "leaf": -0.0990074798 , "cover": 1584.19312 }, 
+          { "nodeid": 18, "leaf": 0.0145874415 , "cover": 3767.34375 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "pos_score_diff_start", "split_condition": -10, "yes": 9, "no": 10, "missing": 9 , "gain": 1329.53711, "cover": 32916.0703, "children": [
+        { "nodeid": 9, "depth": 3, "split": "pos_score_diff_start", "split_condition": -15, "yes": 19, "no": 20, "missing": 19 , "gain": 100.136719, "cover": 17608.9883, "children": [
+          { "nodeid": 19, "leaf": -0.227281198 , "cover": 11804.8027 }, 
+          { "nodeid": 20, "leaf": -0.195011899 , "cover": 5804.18408 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "spread_time", "split_condition": 3.28104949, "yes": 21, "no": 22, "missing": 21 , "gain": 476.763184, "cover": 15307.084, "children": [
+          { "nodeid": 21, "leaf": -0.112083927 , "cover": 10483.5156 }, 
+          { "nodeid": 22, "leaf": -0.188092619 , "cover": 4823.56787 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "spread_time", "split_condition": 0.690574527, "yes": 5, "no": 6, "missing": 5 , "gain": 11630.2168, "cover": 49578.1719, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": 6, "yes": 11, "no": 12, "missing": 11 , "gain": 2161.6582, "cover": 38953.0938, "children": [
+        { "nodeid": 11, "depth": 3, "split": "spread_time", "split_condition": -3.39241076, "yes": 23, "no": 24, "missing": 24 , "gain": 845.558594, "cover": 16799.1992, "children": [
+          { "nodeid": 23, "leaf": 0.169500455 , "cover": 6013.69678 }, 
+          { "nodeid": 24, "leaf": 0.0758948997 , "cover": 10785.502 }
+        ]}, 
+        { "nodeid": 12, "depth": 3, "split": "pos_score_diff_start", "split_condition": 12, "yes": 25, "no": 26, "missing": 25 , "gain": 288.769531, "cover": 22153.8945, "children": [
+          { "nodeid": 25, "leaf": 0.178043932 , "cover": 9457.81641 }, 
+          { "nodeid": 26, "leaf": 0.224289089 , "cover": 12696.0771 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "spread_time", "split_condition": 4.72279549, "yes": 13, "no": 14, "missing": 14 , "gain": 1047.10901, "cover": 10625.0771, "children": [
+        { "nodeid": 13, "depth": 3, "split": "pos_score_diff_start", "split_condition": 9, "yes": 27, "no": 28, "missing": 27 , "gain": 287.225372, "cover": 6490.76904, "children": [
+          { "nodeid": 27, "leaf": -0.039640855 , "cover": 5559.18262 }, 
+          { "nodeid": 28, "leaf": 0.080302678 , "cover": 931.586365 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "spread_time", "split_condition": 13.6465244, "yes": 29, "no": 30, "missing": 30 , "gain": 140.503174, "cover": 4134.30859, "children": [
+          { "nodeid": 29, "leaf": -0.127126858 , "cover": 2905.51172 }, 
+          { "nodeid": 30, "leaf": -0.207935497 , "cover": 1228.79712 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 115515.484, "cover": 83281.0703, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -2, "yes": 3, "no": 4, "missing": 3 , "gain": 47.03125, "cover": 41832.0391, "children": [
+      { "nodeid": 3, "depth": 2, "split": "pos_score_diff_start", "split_condition": -10, "yes": 7, "no": 8, "missing": 7 , "gain": 8.1171875, "cover": 28936.3242, "children": [
+        { "nodeid": 7, "leaf": -0.22763519 , "cover": 15651.2441 }, 
+        { "nodeid": 8, "leaf": -0.234887764 , "cover": 13285.0811 }
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "pos_score_diff_start", "split_condition": 5, "yes": 9, "no": 10, "missing": 9 , "gain": 6.17773438, "cover": 12895.7158, "children": [
+        { "nodeid": 9, "depth": 3, "split": "is_home", "yes": 16, "no": 15 , "gain": 0.727539062, "cover": 10128.1963, "children": [
+          { "nodeid": 15, "leaf": -0.240391374 , "cover": 5476.15771 }, 
+          { "nodeid": 16, "leaf": -0.246312544 , "cover": 4652.03906 }
+        ]}, 
+        { "nodeid": 10, "leaf": -0.255028248 , "cover": 2767.51929 }
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": -1, "yes": 5, "no": 6, "missing": 5 , "gain": 44.21875, "cover": 41449.0273, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": -7, "yes": 11, "no": 12, "missing": 11 , "gain": 2.53320312, "cover": 8692.69336, "children": [
+        { "nodeid": 11, "leaf": 0.255806834 , "cover": 2220.40869 }, 
+        { "nodeid": 12, "leaf": 0.245878324 , "cover": 6472.28418 }
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "pos_score_diff_start", "split_condition": 6, "yes": 13, "no": 14, "missing": 13 , "gain": 13.71875, "cover": 32756.3359, "children": [
+        { "nodeid": 13, "depth": 3, "split": "is_home", "yes": 18, "no": 17 , "gain": 0.138671875, "cover": 13601.5273, "children": [
+          { "nodeid": 17, "leaf": 0.239713103 , "cover": 5729.24268 }, 
+          { "nodeid": 18, "leaf": 0.235394821 , "cover": 7872.28467 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "pos_score_diff_start", "split_condition": 11, "yes": 19, "no": 20, "missing": 19 , "gain": 0.28125, "cover": 19154.8086, "children": [
+          { "nodeid": 19, "leaf": 0.230873063 , "cover": 7147.67432 }, 
+          { "nodeid": 20, "leaf": 0.227111414 , "cover": 12007.1338 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.000517619483, "yes": 1, "no": 2, "missing": 1 , "gain": 20421.3574, "cover": 70195.0703, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -7, "yes": 3, "no": 4, "missing": 3 , "gain": 4076.13379, "cover": 37488.0859, "children": [
+      { "nodeid": 3, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0106329713, "yes": 7, "no": 8, "missing": 7 , "gain": 585.220703, "cover": 17443.8047, "children": [
+        { "nodeid": 7, "depth": 3, "split": "pos_score_diff_start", "split_condition": -14, "yes": 15, "no": 16, "missing": 15 , "gain": 51.28125, "cover": 9213.9707, "children": [
+          { "nodeid": 15, "leaf": -0.214547396 , "cover": 7317.30029 }, 
+          { "nodeid": 16, "leaf": -0.177269563 , "cover": 1896.67041 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "pos_score_diff_start", "split_condition": -12, "yes": 17, "no": 18, "missing": 17 , "gain": 132.339844, "cover": 8229.83398, "children": [
+          { "nodeid": 17, "leaf": -0.156656206 , "cover": 4486.45947 }, 
+          { "nodeid": 18, "leaf": -0.105645292 , "cover": 3743.37427 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00172334444, "yes": 9, "no": 10, "missing": 9 , "gain": 431.228088, "cover": 20044.2812, "children": [
+        { "nodeid": 9, "depth": 3, "split": "is_home", "yes": 20, "no": 19 , "gain": 66.1171875, "cover": 7676.34473, "children": [
+          { "nodeid": 19, "leaf": -0.0939256251 , "cover": 4255.83252 }, 
+          { "nodeid": 20, "leaf": -0.0565440059 , "cover": 3420.51221 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "is_home", "yes": 22, "no": 21 , "gain": 243.708801, "cover": 12367.9365, "children": [
+          { "nodeid": 21, "leaf": -0.0439426564 , "cover": 6422.1665 }, 
+          { "nodeid": 22, "leaf": 0.012244951 , "cover": 5945.77002 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": 8, "yes": 5, "no": 6, "missing": 5 , "gain": 2979.4873, "cover": 32706.9863, "children": [
+      { "nodeid": 5, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00270701898, "yes": 11, "no": 12, "missing": 11 , "gain": 458.25293, "cover": 19705.7246, "children": [
+        { "nodeid": 11, "depth": 3, "split": "is_home", "yes": 24, "no": 23 , "gain": 182.364288, "cover": 10475.1338, "children": [
+          { "nodeid": 23, "leaf": 0.0084586218 , "cover": 4827.43604 }, 
+          { "nodeid": 24, "leaf": 0.061398685 , "cover": 5647.69727 }
+        ]}, 
+        { "nodeid": 12, "depth": 3, "split": "pos_score_diff_start", "split_condition": 3, "yes": 25, "no": 26, "missing": 25 , "gain": 113.332031, "cover": 9230.59082, "children": [
+          { "nodeid": 25, "leaf": 0.0496394001 , "cover": 1597.35669 }, 
+          { "nodeid": 26, "leaf": 0.108267955 , "cover": 7633.23389 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0113697406, "yes": 13, "no": 14, "missing": 13 , "gain": 248.68457, "cover": 13001.2617, "children": [
+        { "nodeid": 13, "depth": 3, "split": "is_home", "yes": 28, "no": 27 , "gain": 57.4724121, "cover": 4965.54297, "children": [
+          { "nodeid": 27, "leaf": 0.125094503 , "cover": 1805.39941 }, 
+          { "nodeid": 28, "leaf": 0.170043796 , "cover": 3160.14355 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "pos_score_diff_start", "split_condition": 15, "yes": 29, "no": 30, "missing": 29 , "gain": 23.7158203, "cover": 8035.71875, "children": [
+          { "nodeid": 29, "leaf": 0.191980407 , "cover": 2088.9082 }, 
+          { "nodeid": 30, "leaf": 0.217320472 , "cover": 5946.81055 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 85333.2578, "cover": 65963.1094, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000236287335, "yes": 3, "no": 4, "missing": 3 , "gain": 49.4921875, "cover": 33104.1289, "children": [
+      { "nodeid": 3, "depth": 2, "split": "pos_score_diff_start", "split_condition": -10, "yes": 7, "no": 8, "missing": 7 , "gain": 5.97851562, "cover": 21966.7617, "children": [
+        { "nodeid": 7, "leaf": -0.218333229 , "cover": 11259.3867 }, 
+        { "nodeid": 8, "depth": 3, "split": "spread_time", "split_condition": -0.409048468, "yes": 15, "no": 16, "missing": 16 , "gain": 0.286132812, "cover": 10707.375, "children": [
+          { "nodeid": 15, "leaf": -0.230556563 , "cover": 2023.50659 }, 
+          { "nodeid": 16, "leaf": -0.224396214 , "cover": 8683.86914 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00270709815, "yes": 9, "no": 10, "missing": 9 , "gain": 7.45214844, "cover": 11137.3652, "children": [
+        { "nodeid": 9, "depth": 3, "split": "spread_time", "split_condition": 0.690729856, "yes": 17, "no": 18, "missing": 17 , "gain": 1.85546875, "cover": 7436.99756, "children": [
+          { "nodeid": 17, "leaf": -0.239375979 , "cover": 3079.98706 }, 
+          { "nodeid": 18, "leaf": -0.230916098 , "cover": 4357.01074 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "pos_score_diff_start", "split_condition": 8, "yes": 19, "no": 20, "missing": 19 , "gain": 0.293945312, "cover": 3700.36816, "children": [
+          { "nodeid": 19, "leaf": -0.243686751 , "cover": 2706.31494 }, 
+          { "nodeid": 20, "leaf": -0.253666312 , "cover": 994.05304 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.40524265e-05, "yes": 5, "no": 6, "missing": 5 , "gain": 47.8203125, "cover": 32858.9805, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": -7, "yes": 11, "no": 12, "missing": 11 , "gain": 4.08203125, "cover": 8365.20801, "children": [
+        { "nodeid": 11, "leaf": 0.249724895 , "cover": 2044.36401 }, 
+        { "nodeid": 12, "depth": 3, "split": "spread_time", "split_condition": -0.406024218, "yes": 21, "no": 22, "missing": 22 , "gain": 1.70703125, "cover": 6320.84375, "children": [
+          { "nodeid": 21, "leaf": 0.233495146 , "cover": 3317.93506 }, 
+          { "nodeid": 22, "leaf": 0.242391139 , "cover": 3002.90845 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "pos_score_diff_start", "split_condition": 5, "yes": 13, "no": 14, "missing": 13 , "gain": 9.47460938, "cover": 24493.7715, "children": [
+        { "nodeid": 13, "depth": 3, "split": "spread_time", "split_condition": 0.692299604, "yes": 23, "no": 24, "missing": 23 , "gain": 0.629882812, "cover": 10154.458, "children": [
+          { "nodeid": 23, "leaf": 0.226592407 , "cover": 8277.96973 }, 
+          { "nodeid": 24, "leaf": 0.233691171 , "cover": 1876.48877 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "pos_score_diff_start", "split_condition": 10, "yes": 25, "no": 26, "missing": 25 , "gain": 0.2734375, "cover": 14339.3135, "children": [
+          { "nodeid": 25, "leaf": 0.222357392 , "cover": 4632.99805 }, 
+          { "nodeid": 26, "leaf": 0.218017608 , "cover": 9706.31543 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 68014.6484, "cover": 55259.5273, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000236331311, "yes": 3, "no": 4, "missing": 3 , "gain": 24.2734375, "cover": 27748.1387, "children": [
+      { "nodeid": 3, "depth": 2, "split": "pos_score_diff_start", "split_condition": -10, "yes": 7, "no": 8, "missing": 7 , "gain": 2.51171875, "cover": 18315.9824, "children": [
+        { "nodeid": 7, "leaf": -0.214734629 , "cover": 9347.65039 }, 
+        { "nodeid": 8, "leaf": -0.220417574 , "cover": 8968.33203 }
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00270757452, "yes": 9, "no": 10, "missing": 9 , "gain": 2.98730469, "cover": 9432.15527, "children": [
+        { "nodeid": 9, "depth": 3, "split": "spread_time", "split_condition": 0.68977201, "yes": 15, "no": 16, "missing": 15 , "gain": 0.284667969, "cover": 6264.80078, "children": [
+          { "nodeid": 15, "leaf": -0.230975538 , "cover": 2612.82959 }, 
+          { "nodeid": 16, "leaf": -0.224544525 , "cover": 3651.97119 }
+        ]}, 
+        { "nodeid": 10, "leaf": -0.236317635 , "cover": 3167.35449 }
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.38487433e-05, "yes": 5, "no": 6, "missing": 5 , "gain": 23.0664062, "cover": 27511.3906, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": -7, "yes": 11, "no": 12, "missing": 11 , "gain": 1.29492188, "cover": 7048.87793, "children": [
+        { "nodeid": 11, "leaf": 0.238743857 , "cover": 1731.16516 }, 
+        { "nodeid": 12, "depth": 3, "split": "spread_time", "split_condition": -0.40821889, "yes": 17, "no": 18, "missing": 18 , "gain": 0.165039062, "cover": 5317.71289, "children": [
+          { "nodeid": 17, "leaf": 0.226531908 , "cover": 2791.55469 }, 
+          { "nodeid": 18, "leaf": 0.233221531 , "cover": 2526.15796 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "pos_score_diff_start", "split_condition": 6, "yes": 13, "no": 14, "missing": 13 , "gain": 4.30078125, "cover": 20462.5117, "children": [
+        { "nodeid": 13, "leaf": 0.222152159 , "cover": 8775.63086 }, 
+        { "nodeid": 14, "leaf": 0.215531394 , "cover": 11686.8818 }
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 54424.1055, "cover": 46002.4375, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000236331311, "yes": 3, "no": 4, "missing": 3 , "gain": 11.7578125, "cover": 23065.709, "children": [
+      { "nodeid": 3, "depth": 2, "split": "pos_score_diff_start", "split_condition": -10, "yes": 7, "no": 8, "missing": 7 , "gain": 0.771484375, "cover": 15176.4307, "children": [
+        { "nodeid": 7, "leaf": -0.211878568 , "cover": 7726.49854 }, 
+        { "nodeid": 8, "leaf": -0.216377378 , "cover": 7449.93164 }
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00270743249, "yes": 9, "no": 10, "missing": 9 , "gain": 0.8828125, "cover": 7889.27832, "children": [
+        { "nodeid": 9, "leaf": -0.221713692 , "cover": 5234.76807 }, 
+        { "nodeid": 10, "leaf": -0.228680283 , "cover": 2654.51001 }
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.43497658e-05, "yes": 5, "no": 6, "missing": 5 , "gain": 11.2109375, "cover": 22936.7305, "children": [
+      { "nodeid": 5, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00172285526, "yes": 11, "no": 12, "missing": 11 , "gain": 0.0610351562, "cover": 5948.90771, "children": [
+        { "nodeid": 11, "leaf": 0.228013858 , "cover": 3317.36353 }, 
+        { "nodeid": 12, "leaf": 0.221992597 , "cover": 2631.54443 }
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "pos_score_diff_start", "split_condition": 5, "yes": 13, "no": 14, "missing": 13 , "gain": 1.68164062, "cover": 16987.8223, "children": [
+        { "nodeid": 13, "leaf": 0.217814952 , "cover": 7108.38379 }, 
+        { "nodeid": 14, "leaf": 0.212577611 , "cover": 9879.43848 }
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000799193862, "yes": 1, "no": 2, "missing": 1 , "gain": 7448.11572, "cover": 38221.4688, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -13, "yes": 3, "no": 4, "missing": 3 , "gain": 1059.9585, "cover": 15523.4512, "children": [
+      { "nodeid": 3, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0106340265, "yes": 7, "no": 8, "missing": 7 , "gain": 135.331543, "cover": 5965.05908, "children": [
+        { "nodeid": 7, "depth": 3, "split": "pos_score_diff_start", "split_condition": -15, "yes": 15, "no": 16, "missing": 15 , "gain": 13.0195312, "cover": 3830.81616, "children": [
+          { "nodeid": 15, "leaf": -0.200462222 , "cover": 3403.5271 }, 
+          { "nodeid": 16, "leaf": -0.162120104 , "cover": 427.289154 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "pos_score_diff_start", "split_condition": -18, "yes": 17, "no": 18, "missing": 17 , "gain": 22.446106, "cover": 2134.24292, "children": [
+          { "nodeid": 17, "leaf": -0.173995659 , "cover": 435.781982 }, 
+          { "nodeid": 18, "leaf": -0.12266393 , "cover": 1698.46094 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00471025892, "yes": 9, "no": 10, "missing": 9 , "gain": 159.236938, "cover": 9558.39258, "children": [
+        { "nodeid": 9, "depth": 3, "split": "pos_score_diff_start", "split_condition": -6, "yes": 19, "no": 20, "missing": 19 , "gain": 40.8768921, "cover": 2947.33667, "children": [
+          { "nodeid": 19, "leaf": -0.116794147 , "cover": 2351.02539 }, 
+          { "nodeid": 20, "leaf": -0.0580091365 , "cover": 596.31134 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "pos_score_diff_start", "split_condition": -5, "yes": 21, "no": 22, "missing": 21 , "gain": 52.0978394, "cover": 6611.05566, "children": [
+          { "nodeid": 21, "leaf": -0.0605301075 , "cover": 4653.38574 }, 
+          { "nodeid": 22, "leaf": -0.0216274541 , "cover": 1957.66992 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": 8, "yes": 5, "no": 6, "missing": 5 , "gain": 2077.32251, "cover": 22698.0176, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": 1, "yes": 11, "no": 12, "missing": 11 , "gain": 386.427917, "cover": 16231.2539, "children": [
+        { "nodeid": 11, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.000536044012, "yes": 23, "no": 24, "missing": 23 , "gain": 43.2227173, "cover": 9493.66602, "children": [
+          { "nodeid": 23, "leaf": -0.00491299899 , "cover": 4951.7998 }, 
+          { "nodeid": 24, "leaf": 0.0220996048 , "cover": 4541.8667 }
+        ]}, 
+        { "nodeid": 12, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.012582669, "yes": 25, "no": 26, "missing": 25 , "gain": 95.9780884, "cover": 6737.58691, "children": [
+          { "nodeid": 25, "leaf": 0.0622900128 , "cover": 6006.48682 }, 
+          { "nodeid": 26, "leaf": 0.139040858 , "cover": 731.100281 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0123748258, "yes": 13, "no": 14, "missing": 13 , "gain": 170.908203, "cover": 6466.76465, "children": [
+        { "nodeid": 13, "depth": 3, "split": "pos_score_diff_start", "split_condition": 14, "yes": 27, "no": 28, "missing": 27 , "gain": 40.9998779, "cover": 2832.55786, "children": [
+          { "nodeid": 27, "leaf": 0.108674169 , "cover": 1523.84082 }, 
+          { "nodeid": 28, "leaf": 0.157172531 , "cover": 1308.71704 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "pos_score_diff_start", "split_condition": 15, "yes": 29, "no": 30, "missing": 29 , "gain": 14.717041, "cover": 3634.20679, "children": [
+          { "nodeid": 29, "leaf": 0.174488232 , "cover": 939.101318 }, 
+          { "nodeid": 30, "leaf": 0.204489455 , "cover": 2695.10547 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 41586.7148, "cover": 36263.2031, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.43262353e-05, "yes": 3, "no": 4, "missing": 3 , "gain": 9.25, "cover": 18182.1328, "children": [
+      { "nodeid": 3, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00414261129, "yes": 7, "no": 8, "missing": 7 , "gain": 0.272460938, "cover": 11950.6074, "children": [
+        { "nodeid": 7, "leaf": -0.20881696 , "cover": 6838.80322 }, 
+        { "nodeid": 8, "leaf": -0.213163123 , "cover": 5111.80371 }
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00273243571, "yes": 9, "no": 10, "missing": 9 , "gain": 0.53125, "cover": 6231.52637, "children": [
+        { "nodeid": 9, "leaf": -0.218125209 , "cover": 3879.8645 }, 
+        { "nodeid": 10, "leaf": -0.225036651 , "cover": 2351.66187 }
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000239054367, "yes": 5, "no": 6, "missing": 5 , "gain": 9.14257812, "cover": 18081.0703, "children": [
+      { "nodeid": 5, "leaf": 0.222249866 , "cover": 4677.32617 }, 
+      { "nodeid": 6, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00297741964, "yes": 11, "no": 12, "missing": 11 , "gain": 0.887695312, "cover": 13403.7441, "children": [
+        { "nodeid": 11, "leaf": 0.214340642 , "cover": 5349.58496 }, 
+        { "nodeid": 12, "leaf": 0.20934768 , "cover": 8054.15918 }
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 33599.0273, "cover": 30059.7383, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -2, "yes": 3, "no": 4, "missing": 3 , "gain": 3.984375, "cover": 15086.7217, "children": [
+      { "nodeid": 3, "leaf": -0.208557412 , "cover": 9379.16797 }, 
+      { "nodeid": 4, "leaf": -0.21614109 , "cover": 5707.5542 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": -1, "yes": 5, "no": 6, "missing": 5 , "gain": 3.87304688, "cover": 14973.0166, "children": [
+      { "nodeid": 5, "leaf": 0.217491135 , "cover": 3983.16333 }, 
+      { "nodeid": 6, "depth": 2, "split": "pos_score_diff_start", "split_condition": 5, "yes": 7, "no": 8, "missing": 7 , "gain": 0.140625, "cover": 10989.8535, "children": [
+        { "nodeid": 7, "leaf": 0.211500317 , "cover": 5073.1709 }, 
+        { "nodeid": 8, "leaf": 0.2072469 , "cover": 5916.68262 }
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 27234.4238, "cover": 24873.8125, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 8.30369536e-05, "yes": 3, "no": 4, "missing": 3 , "gain": 1.81738281, "cover": 12471.3516, "children": [
+      { "nodeid": 3, "leaf": -0.207023725 , "cover": 8146.31787 }, 
+      { "nodeid": 4, "leaf": -0.213442788 , "cover": 4325.03418 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000239210349, "yes": 5, "no": 6, "missing": 5 , "gain": 1.75, "cover": 12402.4619, "children": [
+      { "nodeid": 5, "leaf": 0.214350149 , "cover": 3233.96973 }, 
+      { "nodeid": 6, "leaf": 0.207452938 , "cover": 9168.49121 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 22051.5938, "cover": 20481.4512, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.000227001889, "yes": 3, "no": 4, "missing": 3 , "gain": 0.46484375, "cover": 10271.3945, "children": [
+      { "nodeid": 3, "leaf": -0.205580026 , "cover": 6386.96045 }, 
+      { "nodeid": 4, "leaf": -0.21063064 , "cover": 3884.43384 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 7.43336423e-05, "yes": 5, "no": 6, "missing": 5 , "gain": 0.42578125, "cover": 10210.0576, "children": [
+      { "nodeid": 5, "leaf": 0.211280331 , "cover": 2976.36963 }, 
+      { "nodeid": 6, "leaf": 0.205944419 , "cover": 7233.68799 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 17920.1699, "cover": 16872.9121, "children": [
+    { "nodeid": 1, "leaf": -0.206098303 , "cover": 8457.62109 }, 
+    { "nodeid": 2, "leaf": 0.206105188 , "cover": 8415.29102 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 14587.6895, "cover": 13886.9365, "children": [
+    { "nodeid": 1, "leaf": -0.204968795 , "cover": 6966.2168 }, 
+    { "nodeid": 2, "leaf": 0.204971984 , "cover": 6920.71924 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 11893.8486, "cover": 11425.3604, "children": [
+    { "nodeid": 1, "leaf": -0.204038814 , "cover": 5725.64453 }, 
+    { "nodeid": 2, "leaf": 0.204044983 , "cover": 5699.71631 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 9680.58105, "cover": 9368.45215, "children": [
+    { "nodeid": 1, "leaf": -0.203281686 , "cover": 4694.45752 }, 
+    { "nodeid": 2, "leaf": 0.203284696 , "cover": 4673.99463 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 7914.7251, "cover": 7705.93213, "children": [
+    { "nodeid": 1, "leaf": -0.202664301 , "cover": 3863.54663 }, 
+    { "nodeid": 2, "leaf": 0.20266743 , "cover": 3842.3855 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 6455.30225, "cover": 6316.27441, "children": [
+    { "nodeid": 1, "leaf": -0.202157259 , "cover": 3164.3042 }, 
+    { "nodeid": 2, "leaf": 0.202157766 , "cover": 3151.97021 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 5268.1001, "cover": 5175.79297, "children": [
+    { "nodeid": 1, "leaf": -0.201738 , "cover": 2597.49219 }, 
+    { "nodeid": 2, "leaf": 0.201737925 , "cover": 2578.30103 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 4305.06494, "cover": 4243.8667, "children": [
+    { "nodeid": 1, "leaf": -0.201390192 , "cover": 2128.73267 }, 
+    { "nodeid": 2, "leaf": 0.201390728 , "cover": 2115.13403 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 3526.97339, "cover": 3486.52954, "children": [
+    { "nodeid": 1, "leaf": -0.201099873 , "cover": 1748.32642 }, 
+    { "nodeid": 2, "leaf": 0.201099798 , "cover": 1738.20325 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 2881.53833, "cover": 2855.12231, "children": [
+    { "nodeid": 1, "leaf": -0.20085375 , "cover": 1431.73315 }, 
+    { "nodeid": 2, "leaf": 0.200853452 , "cover": 1423.38916 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 2356.51978, "cover": 2339.47461, "children": [
+    { "nodeid": 1, "leaf": -0.200641587 , "cover": 1172.27417 }, 
+    { "nodeid": 2, "leaf": 0.200642422 , "cover": 1167.20032 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 1928.98254, "cover": 1918.22339, "children": [
+    { "nodeid": 1, "leaf": -0.200456783 , "cover": 961.907471 }, 
+    { "nodeid": 2, "leaf": 0.200456187 , "cover": 956.315857 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 1577.41125, "cover": 1570.86584, "children": [
+    { "nodeid": 1, "leaf": -0.200290427 , "cover": 787.851318 }, 
+    { "nodeid": 2, "leaf": 0.200289041 , "cover": 783.014526 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "spread_time", "split_condition": -0.0578417033, "yes": 1, "no": 2, "missing": 2 , "gain": 236.024261, "cover": 1287.2196, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": 6, "yes": 3, "no": 4, "missing": 3 , "gain": 37.764679, "cover": 631.420227, "children": [
+      { "nodeid": 3, "depth": 2, "split": "spread_time", "split_condition": -1.87923527, "yes": 7, "no": 8, "missing": 8 , "gain": 18.1424084, "cover": 411.02301, "children": [
+        { "nodeid": 7, "depth": 3, "split": "spread_time", "split_condition": -8.46324348, "yes": 15, "no": 16, "missing": 16 , "gain": 5.05770493, "cover": 195.235031, "children": [
+          { "nodeid": 15, "leaf": 0.142461196 , "cover": 60.8969727 }, 
+          { "nodeid": 16, "leaf": 0.0719436035 , "cover": 134.338058 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0117466282, "yes": 17, "no": 18, "missing": 17 , "gain": 8.57229424, "cover": 215.787979, "children": [
+          { "nodeid": 17, "leaf": -0.0977784693 , "cover": 24.8249149 }, 
+          { "nodeid": 18, "leaf": 0.0249757078 , "cover": 190.963058 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "pos_score_diff_start", "split_condition": 12, "yes": 9, "no": 10, "missing": 9 , "gain": 4.02610779, "cover": 220.397247, "children": [
+        { "nodeid": 9, "depth": 3, "split": "spread_time", "split_condition": -4.55358219, "yes": 19, "no": 20, "missing": 20 , "gain": 0.859291077, "cover": 106.03492, "children": [
+          { "nodeid": 19, "leaf": 0.158322141 , "cover": 26.1829815 }, 
+          { "nodeid": 20, "leaf": 0.109109282 , "cover": 79.8519363 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00917509943, "yes": 21, "no": 22, "missing": 21 , "gain": 0.307357788, "cover": 114.36232, "children": [
+          { "nodeid": 21, "leaf": 0.139927536 , "cover": 22.5920506 }, 
+          { "nodeid": 22, "leaf": 0.18857269 , "cover": 91.7702713 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": -5, "yes": 5, "no": 6, "missing": 5 , "gain": 41.6827164, "cover": 655.799377, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": -14, "yes": 11, "no": 12, "missing": 11 , "gain": 8.47145081, "cover": 306.659332, "children": [
+        { "nodeid": 11, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0112656485, "yes": 23, "no": 24, "missing": 23 , "gain": 0.187385559, "cover": 113.123451, "children": [
+          { "nodeid": 23, "leaf": -0.191786543 , "cover": 84.4474564 }, 
+          { "nodeid": 24, "leaf": -0.148933336 , "cover": 28.6759949 }
+        ]}, 
+        { "nodeid": 12, "depth": 3, "split": "spread_time", "split_condition": 6.7412014, "yes": 25, "no": 26, "missing": 25 , "gain": 2.53128052, "cover": 193.535889, "children": [
+          { "nodeid": 25, "leaf": -0.0995328575 , "cover": 157.388992 }, 
+          { "nodeid": 26, "leaf": -0.160998985 , "cover": 36.146904 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "spread_time", "split_condition": 1.83940053, "yes": 13, "no": 14, "missing": 13 , "gain": 19.1305885, "cover": 349.140045, "children": [
+        { "nodeid": 13, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0139399562, "yes": 27, "no": 28, "missing": 27 , "gain": 10.3144751, "cover": 191.286392, "children": [
+          { "nodeid": 27, "leaf": -0.0139477616 , "cover": 163.568604 }, 
+          { "nodeid": 28, "leaf": 0.115955591 , "cover": 27.7177906 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "spread_time", "split_condition": 8.12487793, "yes": 29, "no": 30, "missing": 30 , "gain": 3.55111885, "cover": 157.853638, "children": [
+          { "nodeid": 29, "leaf": -0.0671469867 , "cover": 108.388313 }, 
+          { "nodeid": 30, "leaf": -0.133014977 , "cover": 49.4653282 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "spread_time", "split_condition": 0.0691425949, "yes": 1, "no": 2, "missing": 1 , "gain": 165.134979, "cover": 1216.22424, "children": [
+    { "nodeid": 1, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00304091722, "yes": 3, "no": 4, "missing": 3 , "gain": 33.6554642, "cover": 621.400513, "children": [
+      { "nodeid": 3, "depth": 2, "split": "spread_time", "split_condition": -1.33741283, "yes": 7, "no": 8, "missing": 8 , "gain": 19.382576, "cover": 385.874237, "children": [
+        { "nodeid": 7, "depth": 3, "split": "spread_time", "split_condition": -10.1485081, "yes": 15, "no": 16, "missing": 16 , "gain": 6.75107002, "cover": 223.582504, "children": [
+          { "nodeid": 15, "leaf": 0.140489608 , "cover": 46.3632889 }, 
+          { "nodeid": 16, "leaf": 0.0547067784 , "cover": 177.219208 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.014086104, "yes": 17, "no": 18, "missing": 17 , "gain": 6.27258396, "cover": 162.291748, "children": [
+          { "nodeid": 17, "leaf": -0.103811517 , "cover": 26.9662743 }, 
+          { "nodeid": 18, "leaf": 0.000233455445 , "cover": 135.32547 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0090713352, "yes": 9, "no": 10, "missing": 9 , "gain": 5.45412445, "cover": 235.526276, "children": [
+        { "nodeid": 9, "depth": 3, "split": "spread_time", "split_condition": -1.59937882, "yes": 19, "no": 20, "missing": 20 , "gain": 4.91196823, "cover": 114.413361, "children": [
+          { "nodeid": 19, "leaf": 0.139072105 , "cover": 57.4259567 }, 
+          { "nodeid": 20, "leaf": 0.0549390428 , "cover": 56.9874039 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "spread_time", "split_condition": -0.184219435, "yes": 21, "no": 22, "missing": 22 , "gain": 0.92137146, "cover": 121.112915, "children": [
+          { "nodeid": 21, "leaf": 0.171212479 , "cover": 96.514534 }, 
+          { "nodeid": 22, "leaf": 0.115667403 , "cover": 24.598381 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.00385606196, "yes": 5, "no": 6, "missing": 5 , "gain": 31.9566803, "cover": 594.823792, "children": [
+      { "nodeid": 5, "depth": 2, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0148726292, "yes": 11, "no": 12, "missing": 11 , "gain": 3.5662384, "cover": 190.238968, "children": [
+        { "nodeid": 11, "leaf": -0.17844376 , "cover": 75.1481247 }, 
+        { "nodeid": 12, "depth": 3, "split": "spread_time", "split_condition": 0.699090838, "yes": 23, "no": 24, "missing": 24 , "gain": 3.90709686, "cover": 115.090843, "children": [
+          { "nodeid": 23, "leaf": -0.0615084358 , "cover": 35.763588 }, 
+          { "nodeid": 24, "leaf": -0.143681169 , "cover": 79.3272552 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "depth": 2, "split": "spread_time", "split_condition": 2.52827454, "yes": 13, "no": 14, "missing": 14 , "gain": 17.4193249, "cover": 404.584808, "children": [
+        { "nodeid": 13, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.0134011637, "yes": 25, "no": 26, "missing": 25 , "gain": 5.23976374, "cover": 225.767548, "children": [
+          { "nodeid": 25, "leaf": -0.0164132249 , "cover": 205.903076 }, 
+          { "nodeid": 26, "leaf": 0.0887569264 , "cover": 19.8644657 }
+        ]}, 
+        { "nodeid": 14, "depth": 3, "split": "spread_time", "split_condition": 10.0003099, "yes": 27, "no": 28, "missing": 28 , "gain": 4.33975601, "cover": 178.817261, "children": [
+          { "nodeid": 27, "leaf": -0.0698497817 , "cover": 128.604645 }, 
+          { "nodeid": 28, "leaf": -0.140204355 , "cover": 50.212616 }
+        ]}
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 1164.05286, "cover": 1160.6897, "children": [
+    { "nodeid": 1, "leaf": -0.200118348 , "cover": 581.801086 }, 
+    { "nodeid": 2, "leaf": 0.200117305 , "cover": 578.888611 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 950.892761, "cover": 949.304443, "children": [
+    { "nodeid": 1, "leaf": -0.199957639 , "cover": 475.593567 }, 
+    { "nodeid": 2, "leaf": 0.199956611 , "cover": 473.710876 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 778.187256, "cover": 777.777588, "children": [
+    { "nodeid": 1, "leaf": -0.199796304 , "cover": 389.380127 }, 
+    { "nodeid": 2, "leaf": 0.199795917 , "cover": 388.397461 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 637.692566, "cover": 638.071594, "children": [
+    { "nodeid": 1, "leaf": -0.199629277 , "cover": 319.585724 }, 
+    { "nodeid": 2, "leaf": 0.199627265 , "cover": 318.48587 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 521.827637, "cover": 522.737549, "children": [
+    { "nodeid": 1, "leaf": -0.199446201 , "cover": 261.837952 }, 
+    { "nodeid": 2, "leaf": 0.199443802 , "cover": 260.899597 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 426.940918, "cover": 428.209564, "children": [
+    { "nodeid": 1, "leaf": -0.199242502 , "cover": 214.782425 }, 
+    { "nodeid": 2, "leaf": 0.199237034 , "cover": 213.427124 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 350.035095, "cover": 351.537292, "children": [
+    { "nodeid": 1, "leaf": -0.19900988 , "cover": 176.169128 }, 
+    { "nodeid": 2, "leaf": 0.199004978 , "cover": 175.368179 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 286.032532, "cover": 287.694275, "children": [
+    { "nodeid": 1, "leaf": -0.198736936 , "cover": 144.271194 }, 
+    { "nodeid": 2, "leaf": 0.198728755 , "cover": 143.42308 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 234.018188, "cover": 235.7827, "children": [
+    { "nodeid": 1, "leaf": -0.1984137 , "cover": 118.096092 }, 
+    { "nodeid": 2, "leaf": 0.198407918 , "cover": 117.686615 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 191.468796, "cover": 193.302704, "children": [
+    { "nodeid": 1, "leaf": -0.198033378 , "cover": 96.9134674 }, 
+    { "nodeid": 2, "leaf": 0.198022485 , "cover": 96.3892288 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 156.642426, "cover": 158.520233, "children": [
+    { "nodeid": 1, "leaf": -0.197577968 , "cover": 79.5041199 }, 
+    { "nodeid": 2, "leaf": 0.197562799 , "cover": 79.0161057 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 128.41275, "cover": 130.317215, "children": [
+    { "nodeid": 1, "leaf": -0.197037086 , "cover": 65.3587494 }, 
+    { "nodeid": 2, "leaf": 0.197018847 , "cover": 64.9584656 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 105.101173, "cover": 107.021027, "children": [
+    { "nodeid": 1, "leaf": -0.196384937 , "cover": 53.6924858 }, 
+    { "nodeid": 2, "leaf": 0.196360454 , "cover": 53.3285446 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "pos_score_diff_start", "split_condition": 0, "yes": 1, "no": 2, "missing": 1 , "gain": 6.03429413, "cover": 87.9118195, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": -14, "yes": 3, "no": 4, "missing": 3 , "gain": 1.76147413, "cover": 40.4725418, "children": [
+      { "nodeid": 3, "leaf": -0.137268707 , "cover": 7.66629934 }, 
+      { "nodeid": 4, "depth": 2, "split": "pos_score_diff_start", "split_condition": -7, "yes": 7, "no": 8, "missing": 7 , "gain": 0.255694568, "cover": 32.8062439, "children": [
+        { "nodeid": 7, "depth": 3, "split": "yards_to_goal", "split_condition": 24, "yes": 11, "no": 12, "missing": 11 , "gain": 0.0042321682, "cover": 10.1854076, "children": [
+          { "nodeid": 11, "leaf": -0.0223015007 , "cover": 1.5926255 }, 
+          { "nodeid": 12, "leaf": -0.0630760044 , "cover": 8.59278202 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "yards_to_goal", "split_condition": 28, "yes": 13, "no": 14, "missing": 13 , "gain": 0.0400761962, "cover": 22.6208363, "children": [
+          { "nodeid": 13, "leaf": -0.00231259409 , "cover": 4.20714664 }, 
+          { "nodeid": 14, "leaf": -0.0244381204 , "cover": 18.4136906 }
+        ]}
+      ]}
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": 11, "yes": 5, "no": 6, "missing": 5 , "gain": 2.08332396, "cover": 47.4392738, "children": [
+      { "nodeid": 5, "depth": 2, "split": "pos_score_diff_start", "split_condition": 4, "yes": 9, "no": 10, "missing": 9 , "gain": 0.274050474, "cover": 38.171524, "children": [
+        { "nodeid": 9, "depth": 3, "split": "yards_to_goal", "split_condition": 46, "yes": 15, "no": 16, "missing": 15 , "gain": 0.0561671332, "cover": 24.4081631, "children": [
+          { "nodeid": 15, "leaf": 0.0237215776 , "cover": 8.69719791 }, 
+          { "nodeid": 16, "leaf": 0.00403364282 , "cover": 15.7109642 }
+        ]}, 
+        { "nodeid": 10, "depth": 3, "split": "yards_to_goal", "split_condition": 65, "yes": 17, "no": 18, "missing": 17 , "gain": 0.0358114839, "cover": 13.763361, "children": [
+          { "nodeid": 17, "leaf": 0.0561336651 , "cover": 8.44377995 }, 
+          { "nodeid": 18, "leaf": 0.0257499609 , "cover": 5.31958055 }
+        ]}
+      ]}, 
+      { "nodeid": 6, "leaf": 0.12782605 , "cover": 9.26774979 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 84.0152512, "cover": 85.9395523, "children": [
+    { "nodeid": 1, "leaf": -0.19549419 , "cover": 43.0410271 }, 
+    { "nodeid": 2, "leaf": 0.195479482 , "cover": 42.8985252 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 68.8321075, "cover": 70.7566757, "children": [
+    { "nodeid": 1, "leaf": -0.194535688 , "cover": 35.4083328 }, 
+    { "nodeid": 2, "leaf": 0.194526717 , "cover": 35.3483429 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 56.315815, "cover": 58.2358246, "children": [
+    { "nodeid": 1, "leaf": -0.193395659 , "cover": 29.1748905 }, 
+    { "nodeid": 2, "leaf": 0.193370566 , "cover": 29.0609322 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 46.1708946, "cover": 48.081852, "children": [
+    { "nodeid": 1, "leaf": -0.192046449 , "cover": 24.0848579 }, 
+    { "nodeid": 2, "leaf": 0.192018449 , "cover": 23.996994 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 37.7139015, "cover": 39.6115379, "children": [
+    { "nodeid": 1, "leaf": -0.190413922 , "cover": 19.8291225 }, 
+    { "nodeid": 2, "leaf": 0.190392375 , "cover": 19.7824173 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "spread_time", "split_condition": 0.0731950104, "yes": 1, "no": 2, "missing": 1 , "gain": 2.76332903, "cover": 32.7526741, "children": [
+    { "nodeid": 1, "depth": 1, "split": "pos_score_diff_start", "split_condition": 1, "yes": 3, "no": 4, "missing": 3 , "gain": 0.405499697, "cover": 16.76717, "children": [
+      { "nodeid": 3, "depth": 2, "split": "spread_time", "split_condition": -1.02669227, "yes": 7, "no": 8, "missing": 8 , "gain": 0.212214261, "cover": 9.72931099, "children": [
+        { "nodeid": 7, "depth": 3, "split": "spread_time", "split_condition": -4.61129904, "yes": 11, "no": 12, "missing": 12 , "gain": 0.030921489, "cover": 5.75706482, "children": [
+          { "nodeid": 11, "leaf": 0.0620223396 , "cover": 2.50332594 }, 
+          { "nodeid": 12, "leaf": 0.021983603 , "cover": 3.25373888 }
+        ]}, 
+        { "nodeid": 8, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": -0.0088062007, "yes": 13, "no": 14, "missing": 13 , "gain": 0.043256782, "cover": 3.97224665, "children": [
+          { "nodeid": 13, "leaf": -0.0324296691 , "cover": 1.06502581 }, 
+          { "nodeid": 14, "leaf": 0.00423264084 , "cover": 2.90722084 }
+        ]}
+      ]}, 
+      { "nodeid": 4, "leaf": 0.0886692032 , "cover": 7.03785849 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "pos_score_diff_start", "split_condition": -5, "yes": 5, "no": 6, "missing": 5 , "gain": 0.331916928, "cover": 15.9855042, "children": [
+      { "nodeid": 5, "leaf": -0.0893619955 , "cover": 6.80840826 }, 
+      { "nodeid": 6, "depth": 2, "split": "spread_time", "split_condition": 1.5002501, "yes": 9, "no": 10, "missing": 10 , "gain": 0.158982322, "cover": 9.17709541, "children": [
+        { "nodeid": 9, "depth": 3, "split": "ExpScoreDiff_Time_Ratio", "split_condition": 0.00779460184, "yes": 15, "no": 16, "missing": 15 , "gain": 0.0261956174, "cover": 4.45815086, "children": [
+          { "nodeid": 15, "leaf": -0.00854924694 , "cover": 3.45582271 }, 
+          { "nodeid": 16, "leaf": 0.0189909376 , "cover": 1.00232828 }
+        ]}, 
+        { "nodeid": 10, "leaf": -0.0503978692 , "cover": 4.71894455 }
+      ]}
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 30.185648, "cover": 32.0639992, "children": [
+    { "nodeid": 1, "leaf": -0.188291922 , "cover": 16.0625286 }, 
+    { "nodeid": 2, "leaf": 0.188249856 , "cover": 16.0014687 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 24.6559334, "cover": 26.5127716, "children": [
+    { "nodeid": 1, "leaf": -0.186001644 , "cover": 13.2761307 }, 
+    { "nodeid": 2, "leaf": 0.185962811 , "cover": 13.23664 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 20.2157154, "cover": 22.0474014, "children": [
+    { "nodeid": 1, "leaf": -0.183390319 , "cover": 11.0346231 }, 
+    { "nodeid": 2, "leaf": 0.183360144 , "cover": 11.0127792 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 16.5215416, "cover": 18.3233948, "children": [
+    { "nodeid": 1, "leaf": -0.18034856 , "cover": 9.17354107 }, 
+    { "nodeid": 2, "leaf": 0.180302709 , "cover": 9.14985371 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 13.5488234, "cover": 15.3169184, "children": [
+    { "nodeid": 1, "leaf": -0.176926419 , "cover": 7.66564703 }, 
+    { "nodeid": 2, "leaf": 0.176888093 , "cover": 7.65127087 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 11.1042595, "cover": 12.8339729, "children": [
+    { "nodeid": 1, "leaf": -0.173052371 , "cover": 6.420434 }, 
+    { "nodeid": 2, "leaf": 0.173027322 , "cover": 6.41353941 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 9.12127876, "cover": 10.8085518, "children": [
+    { "nodeid": 1, "leaf": -0.168795094 , "cover": 5.40841293 }, 
+    { "nodeid": 2, "leaf": 0.168754771 , "cover": 5.40013933 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 7.48730373, "cover": 9.12753201, "children": [
+    { "nodeid": 1, "leaf": -0.164074048 , "cover": 4.56648731 }, 
+    { "nodeid": 2, "leaf": 0.164038897 , "cover": 4.56104469 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 6.14878464, "cover": 7.73780155, "children": [
+    { "nodeid": 1, "leaf": -0.158929378 , "cover": 3.86933446 }, 
+    { "nodeid": 2, "leaf": 0.158922061 , "cover": 3.86846709 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 5.06829262, "cover": 6.60319996, "children": [
+    { "nodeid": 1, "leaf": -0.153522581 , "cover": 3.3029542 }, 
+    { "nodeid": 2, "leaf": 0.153493315 , "cover": 3.300246 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 4.17521286, "cover": 5.65239573, "children": [
+    { "nodeid": 1, "leaf": -0.147747144 , "cover": 2.8274045 }, 
+    { "nodeid": 2, "leaf": 0.147714183 , "cover": 2.82499123 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 3.4706316, "cover": 4.8900156, "children": [
+    { "nodeid": 1, "leaf": -0.142013088 , "cover": 2.44896173 }, 
+    { "nodeid": 2, "leaf": 0.141879827 , "cover": 2.44105363 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "win_indicator", "yes": 2, "no": 1 , "gain": 2.88893032, "cover": 4.24875021, "children": [
+    { "nodeid": 1, "leaf": -0.136027619 , "cover": 2.12628651 }, 
+    { "nodeid": 2, "leaf": 0.135949299 , "cover": 2.1224637 }
+  ]}
+]

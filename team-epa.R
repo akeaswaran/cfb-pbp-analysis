@@ -186,7 +186,7 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
         x_team = (row$play_num + row$lead_play_num) / 2
         tmp <- data.frame(
             x = c(row$play_num + max(c(5, (0.1 * (x_team - row$play_num))))),
-            y = c(max(team_filtered$diff) * 0.925),
+            y = c(max(team_filtered$diff) * 0.9),
             lab_y = c(max(team_filtered$diff)),
             lab = c(as.character(row$week_name)),
             team_x = c(x_team),

@@ -62,7 +62,7 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
             y = "Average Residual from Career EPA/Play",
             title = glue("How Long Does It Take for a Coach's EPA/Play to Stabilize?"),
             subtitle = glue("Selected coach: {name} - Data from {min(seasons)} to {max(seasons)} with win probability btwn 10% and 90%."),
-            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR, logos from cfbplotR.")
+            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5).\nData from @cfbfastR, logos from cfbplotR.")
         )
 
     if (show_reg) {
@@ -139,7 +139,7 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
             y = "Average Residual from Career EPA/Play",
             title = glue("How Long Does It Take for a Team's EPA/Play to Stabilize?"),
             subtitle = glue("Selected team: {name} - Data from {year} with win probability btwn 10% and 90%."),
-            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR, logos from cfbplotR.")
+            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5).\nData from @cfbfastR, logos from cfbplotR.")
         )
 
     if (show_reg) {

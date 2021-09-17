@@ -9,11 +9,11 @@ library(Rcpp)
 
 coach_data <- cfbd_coaches(
     min_year = 2014,
-    max_year = 2020
+    max_year = 2021
 )
 
 pbp <- data.frame()
-seasons <- 2014:2020
+seasons <- 2014:2021
 progressr::with_progress({
     future::plan("multisession")
     pbp <- cfbfastR::load_cfb_pbp(seasons)
@@ -57,7 +57,7 @@ create_coach_chart <- function(name, show_reg = FALSE) {
             x = "Number of Snaps",
             y = "Average Residual from Career EPA/Play",
             title = glue("How Long Does It Take for a Coach's EPA/Play to Stabilize?"),
-            subtitle = glue("Selected coach: {name} - Data from 2014 to 2020."),
+            subtitle = glue("Selected coach: {name} - Data from {min(seasons)} to {max(seasons)}."),
             caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR.")
         )
 

@@ -33,7 +33,6 @@ base_data <- cleaned %>%
 
 graph_data <- base_data %>%
     group_by(coach_name) %>%
-    filter(any(n() >= 300)) %>%
     arrange(season, week, game_play_number) %>%
     mutate(
         play_num = row_number(), #rows were in sequential order

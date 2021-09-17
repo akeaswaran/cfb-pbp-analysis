@@ -23,7 +23,7 @@ cleaned <- pbp %>%
     filter(!is.na(EPA) & !is.na(home_wp_before)) %>%
     filter(season %in% seasons) %>%
     filter(home_wp_before >= .1 && home_wp_before <= .9) %>%
-    select(game_play_number, season, pos_team, EPA)
+    select(season, week, game_play_number, pos_team, EPA)
 
 base_data <- cleaned %>%
     left_join(coach_data, by = c("pos_team" = "school", "season" = "year")) %>%
@@ -34,7 +34,7 @@ base_data <- cleaned %>%
 graph_data <- base_data %>%
     group_by(coach_name) %>%
     filter(any(n() >= 300)) %>%
-    arrange(season, game_play_number) %>%
+    arrange(season, week, game_play_number) %>%
     mutate(
         play_num = row_number(), #rows were in sequential order
         roll_epa = cumsum(EPA),
@@ -117,7 +117,7 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
             & (season %in% seasons)
             & (season == year)
         ) %>%
-        arrange(season, game_play_number) %>%
+        arrange(season, week, game_play_number) %>%
         mutate(
             play_num = row_number(), #rows were in sequential order
             roll_epa = cumsum(EPA),

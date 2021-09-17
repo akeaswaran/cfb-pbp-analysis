@@ -90,11 +90,12 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
 
         print(glue("drawing line for play {row$play_num} with lead {row$lead_play_num}"))
         p <- p + geom_vline(xintercept = row$play_num, linetype = "dashed")
+        x_team = (row$play_num + row$lead_play_num) / 2
         tmp <- data.frame(
-            x = c(row$play_num + 50),
+            x = c(row$play_num + (0.1 * (x_team - row$play_num))),
             y = c(max(coach_filtered$diff) * 0.97),
             lab = c(as.character(row$season)),
-            team_x = c((row$play_num + row$lead_play_num) / 2),
+            team_x = c(x_team),
             team = c(row$pos_team)
         )
         ann_text <- rbind(ann_text, tmp)

@@ -152,4 +152,4 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
     p
 }
 
-create_team_chart(name = "Georgia Tech", year = 2020, save_img = TRUE)
+create_team_chart(name = "Georgia Tech", year = 2014, save_img = TRUE)

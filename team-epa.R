@@ -23,7 +23,7 @@ cleaned <- pbp %>%
     filter(!is.na(EPA) & !is.na(home_wp_before)) %>%
     filter(season %in% seasons) %>%
     filter(home_wp_before >= .1 && home_wp_before <= .9) %>%
-    select(season, week, game_play_number, pos_team, EPA)
+    select(season, week, game_play_number, pos_team, def_pos_team, EPA)
 
 base_data <- cleaned %>%
     left_join(coach_data, by = c("pos_team" = "school", "season" = "year")) %>%
@@ -135,9 +135,9 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
             car_epa = mean(EPA),
             diff = (roll_epa/play_num) - car_epa,
             abs_diff = abs(diff),
-            lag_season = lag(season),
-            lag_season = ifelse(is.na(lag_season), TRUE, lag_season),
-            change_season = (lag_season != season)
+            lag_def_pos_team = lag(def_pos_team),
+            lag_def_pos_team = ifelse(is.na(lag_def_pos_team), TRUE, lag_def_pos_team),
+            change_def_pos_team = (lag_def_pos_team != def_pos_team)
         )%>%
         ungroup()
 
@@ -157,6 +157,47 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
         p <- p + geom_smooth(method = "loess")
     }
 
+    def_change = team_filtered %>%
+        filter(change_def_pos_team == TRUE) %>%
+        select(play_num, season, week, def_pos_team) %>%
+        mutate(
+            lead_play_num = lead(play_num),
+            lead_play_num = ifelse(is.na(lead_play_num), max(team_filtered$play_num), lead_play_num),
+            week_name = case_when(
+                (week == 15) ~ "CCG",
+                (week == 16) ~ "Bowls",
+                TRUE ~ paste("Wk", week)
+            )
+        )
+
+    ann_text <- data.frame(
+        x = c(),
+        y = c(),
+        lab = c(),
+        team_x = c(),
+        team = c()
+    )
+
+    for (i in 1:nrow(def_change)) {
+        row <- def_change[i, ]
+
+        print(glue("drawing line for play {row$play_num} with lead {row$lead_play_num}"))
+        p <- p + geom_vline(xintercept = row$play_num, linetype = "dashed")
+        x_team = (row$play_num + row$lead_play_num) / 2
+        tmp <- data.frame(
+            x = c(row$play_num + max(c(5, (0.1 * (x_team - row$play_num))))),
+            y = c(max(team_filtered$diff) * 0.925),
+            lab_y = c(max(team_filtered$diff)),
+            lab = c(as.character(row$week_name)),
+            team_x = c(x_team),
+            team = c(row$def_pos_team)
+        )
+        ann_text <- rbind(ann_text, tmp)
+    }
+
+    p <- p + geom_text(data = ann_text, aes(x = team_x, y = lab_y, label = lab), size = 3)
+    p <- p + geom_cfb_logos(data = ann_text, aes(x = team_x, y = y, team = team, alpha = 1.0), width = 0.05)
+
     max_x = max(team_filtered$play_num) * 0.95
     min_y = min(team_filtered$diff)
     max_y = max(team_filtered$diff)
@@ -169,17 +210,16 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
     p <- p + geom_text(data = epa_text, aes(x = x, y = y, label = lab), size = 3)
 
 
-    team_logo = data.frame(
-        x = c(max_x),
-        y = c(max_y),
-        team = c(name)
-    )
-    p <- p + geom_cfb_logos(data = team_logo, aes(x = x, y = y, team = team, alpha = 1.0), width = 0.0875)
+    # team_logo = data.frame(
+    #     x = c(max_x),
+    #     y = c(max_y),
+    #     team = c(name)
+    # )
+    # p <- p + geom_cfb_logos(data = team_logo, aes(x = x, y = y, team = team, alpha = 1.0), width = 0.0875)
 
     if (save_img) {
         ggsave(plot = p, filename = glue("epa-prog-{name}-{year}.jpg"), width=10.4,height=6.25, dpi=320)
     }
     p
 }
-
 create_team_chart(name = "Georgia Tech", year = 2014, save_img = TRUE)

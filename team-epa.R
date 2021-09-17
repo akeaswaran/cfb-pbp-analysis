@@ -101,8 +101,20 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
         ann_text <- rbind(ann_text, tmp)
     }
 
+    max_x = max(coach_filtered$play_num) * 0.95
+    max_y = min(coach_filtered$diff)
+    epa_val = round(max(coach_filtered$car_epa), 3)
+    epa_text = data.frame(
+        x = c(max_x),
+        y = c(max_y),
+        lab = c(glue("Career EPA/play: {epa_val}"))
+    )
+
     p <- p + geom_text(data = ann_text, aes(x = x, y = y, label = lab), size = 3, angle = 90)
     p <- p + geom_cfb_logos(data = ann_text, aes(x = team_x, y = y, team = team, alpha = 1.0), width = 0.0625)
+
+    p <- p + geom_text(data = epa_text, aes(x = x, y = y, label = lab), size = 3)
+
     if (save_img) {
         ggsave(plot = p, filename = glue("epa-prog-{name}.jpg"), width=10.4,height=6.25, dpi=320)
     }

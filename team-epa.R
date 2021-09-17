@@ -4,6 +4,8 @@ library(xgboost)
 library(glue)
 library(ggthemes)
 library(ggplot2)
+library(cfbplotR)
+library(Rcpp)
 
 coach_data <- cfbd_coaches(
     min_year = 2014,
@@ -40,17 +42,15 @@ graph_data <- base_data %>%
         diff = (roll_epa/play_num) - car_epa,
         abs_diff = abs(diff),
         lag_season = lag(season),
-        lag_pos_team = lag(pos_team),
-        change_pos_team = (lag_pos_team != pos_team),
+        lag_season = ifelse(is.na(lag_season), TRUE, lag_season),
         change_season = (lag_season != season)
     )%>%
     ungroup()
 
-create_coach_chart <- function(name) {
+create_coach_chart <- function(name, show_reg = FALSE) {
     coach_filtered <- graph_data %>% filter(coach_name == name)
     p <- ggplot(coach_filtered, aes(x = play_num, y = diff)) +
         geom_point() +
-        geom_smooth(method = "loess") +
         theme_fivethirtyeight() +
         theme(axis.title.x = element_text(), axis.title.y = element_text()) +
         labs(
@@ -61,30 +61,43 @@ create_coach_chart <- function(name) {
             caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR.")
         )
 
+    if (show_reg) {
+        p <- p + geom_smooth(method = "loess")
+    }
+
     year_change = coach_filtered %>%
         filter(change_season == TRUE) %>%
-        select(play_num, season)
+        select(play_num, season, pos_team) %>%
+        mutate(
+            lead_play_num = lead(play_num),
+            lead_play_num = ifelse(is.na(lead_play_num), max(coach_filtered$play_num), lead_play_num)
+        )
 
     ann_text <- data.frame(
         x = c(),
         y = c(),
-        lab = c()
+        lab = c(),
+        team_x = c(),
+        team = c()
     )
 
     for (i in 1:nrow(year_change)) {
         row <- year_change[i, ]
 
-        print(glue("drawing line for play {row$play_num}"))
+        print(glue("drawing line for play {row$play_num} with lead {row$lead_play_num}"))
         p <- p + geom_vline(xintercept = row$play_num, linetype = "dashed")
         tmp <- data.frame(
-            x = c(row$play_num + 40),
-            y = c(max(coach_filtered$diff)),
-            lab = c(as.character(row$season))
+            x = c(row$play_num + 50),
+            y = c(max(coach_filtered$diff) * 0.97),
+            lab = c(as.character(row$season)),
+            team_x = c((row$play_num + row$lead_play_num) / 2),
+            team = c(row$pos_team)
         )
         ann_text <- rbind(ann_text, tmp)
     }
 
     p <- p + geom_text(data = ann_text, aes(x = x, y = y, label = lab), size = 3, angle = 90)
+    p <- p + geom_cfb_logos(data = ann_text, aes(x = team_x, y = y, team = team, alpha = 1.0), width = 0.0625)
     p
 }
-create_coach_chart(name = "Kirby Smart")
+create_coach_chart(name = "Geoff Collins")

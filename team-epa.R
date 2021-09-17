@@ -91,7 +91,7 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
         p <- p + geom_vline(xintercept = row$play_num, linetype = "dashed")
         x_team = (row$play_num + row$lead_play_num) / 2
         tmp <- data.frame(
-            x = c(row$play_num + min(c(50, (0.1 * (x_team - row$play_num))))),
+            x = c(row$play_num + max(c(50, (0.1 * (x_team - row$play_num))))),
             y = c(max(coach_filtered$diff) * 0.97),
             lab = c(as.character(row$season)),
             team_x = c(x_team),

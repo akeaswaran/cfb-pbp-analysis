@@ -62,7 +62,7 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
             y = "Average Residual from Career EPA/Play",
             title = glue("How Long Does It Take for a Coach's EPA/Play to Stabilize?"),
             subtitle = glue("Selected coach: {name} - Data from {min(seasons)} to {max(seasons)} with win probability btwn 10% and 90%."),
-            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR.")
+            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR, logos from cfbplotR.")
         )
 
     if (show_reg) {
@@ -92,7 +92,7 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
         p <- p + geom_vline(xintercept = row$play_num, linetype = "dashed")
         x_team = (row$play_num + row$lead_play_num) / 2
         tmp <- data.frame(
-            x = c(row$play_num + (0.1 * (x_team - row$play_num))),
+            x = c(row$play_num + min(c(50, (0.1 * (x_team - row$play_num))))),
             y = c(max(coach_filtered$diff) * 0.97),
             lab = c(as.character(row$season)),
             team_x = c(x_team),
@@ -108,4 +108,48 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
     }
     p
 }
-create_coach_chart(name = "Geoff Collins", save_img = TRUE)
+create_coach_chart(name = "Paul Johnson", save_img = TRUE)
+
+create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
+    team_filtered <- base_data %>%
+        filter(
+            (pos_team == name)
+            & (season %in% seasons)
+            & (season == year)
+        ) %>%
+        arrange(season, game_play_number) %>%
+        mutate(
+            play_num = row_number(), #rows were in sequential order
+            roll_epa = cumsum(EPA),
+            car_epa = mean(EPA),
+            diff = (roll_epa/play_num) - car_epa,
+            abs_diff = abs(diff),
+            lag_season = lag(season),
+            lag_season = ifelse(is.na(lag_season), TRUE, lag_season),
+            change_season = (lag_season != season)
+        )%>%
+        ungroup()
+
+    p <- ggplot(team_filtered, aes(x = play_num, y = diff)) +
+        geom_point() +
+        theme_fivethirtyeight() +
+        theme(axis.title.x = element_text(), axis.title.y = element_text()) +
+        labs(
+            x = "Number of Snaps",
+            y = "Average Residual from Career EPA/Play",
+            title = glue("How Long Does It Take for a Team's EPA/Play to Stabilize?"),
+            subtitle = glue("Selected team: {name} - Data from {year} with win probability btwn 10% and 90%."),
+            caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR, logos from cfbplotR.")
+        )
+
+    if (show_reg) {
+        p <- p + geom_smooth(method = "loess")
+    }
+
+    if (save_img) {
+        ggsave(plot = p, filename = glue("epa-prog-{name}-{year}.jpg"), width=10.4,height=6.25, dpi=320)
+    }
+    p
+}
+
+create_team_chart(name = "Georgia Tech", year = 2020, save_img = TRUE)

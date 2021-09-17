@@ -101,11 +101,11 @@ create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
     }
 
     max_x = max(coach_filtered$play_num) * 0.95
-    max_y = min(coach_filtered$diff)
+    min_y = min(coach_filtered$diff)
     epa_val = round(max(coach_filtered$car_epa), 3)
     epa_text = data.frame(
         x = c(max_x),
-        y = c(max_y),
+        y = c(min_y),
         lab = c(glue("Career EPA/play: {epa_val}"))
     )
 
@@ -158,14 +158,23 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
     }
 
     max_x = max(team_filtered$play_num) * 0.95
-    max_y = min(team_filtered$diff)
+    min_y = min(team_filtered$diff)
+    max_y = max(team_filtered$diff)
     epa_val = round(max(team_filtered$car_epa), 3)
     epa_text = data.frame(
         x = c(max_x),
-        y = c(max_y),
+        y = c(min_y),
         lab = c(glue("Season EPA/play: {epa_val}"))
     )
     p <- p + geom_text(data = epa_text, aes(x = x, y = y, label = lab), size = 3)
+
+
+    team_logo = data.frame(
+        x = c(max_x),
+        y = c(max_y),
+        team = c(name)
+    )
+    p <- p + geom_cfb_logos(data = team_logo, aes(x = x, y = y, team = team, alpha = 1.0), width = 0.0875)
 
     if (save_img) {
         ggsave(plot = p, filename = glue("epa-prog-{name}-{year}.jpg"), width=10.4,height=6.25, dpi=320)

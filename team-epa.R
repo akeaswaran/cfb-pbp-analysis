@@ -157,6 +157,16 @@ create_team_chart <- function(name, year, show_reg = FALSE, save_img = FALSE) {
         p <- p + geom_smooth(method = "loess")
     }
 
+    max_x = max(team_filtered$play_num) * 0.95
+    max_y = min(team_filtered$diff)
+    epa_val = round(max(team_filtered$car_epa), 3)
+    epa_text = data.frame(
+        x = c(max_x),
+        y = c(max_y),
+        lab = c(glue("Season EPA/play: {epa_val}"))
+    )
+    p <- p + geom_text(data = epa_text, aes(x = x, y = y, label = lab), size = 3)
+
     if (save_img) {
         ggsave(plot = p, filename = glue("epa-prog-{name}-{year}.jpg"), width=10.4,height=6.25, dpi=320)
     }

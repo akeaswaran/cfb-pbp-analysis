@@ -7,13 +7,13 @@ library(ggplot2)
 library(cfbplotR)
 library(Rcpp)
 
+seasons <- 2014:2020
 coach_data <- cfbd_coaches(
-    min_year = 2014,
-    max_year = 2021
+    min_year = min(seasons),
+    max_year = max(seasons)
 )
 
 pbp <- data.frame()
-seasons <- 2014:2021
 progressr::with_progress({
     future::plan("multisession")
     pbp <- cfbfastR::load_cfb_pbp(seasons)
@@ -47,8 +47,12 @@ graph_data <- base_data %>%
     )%>%
     ungroup()
 
-create_coach_chart <- function(name, show_reg = FALSE) {
-    coach_filtered <- graph_data %>% filter(coach_name == name)
+create_coach_chart <- function(name, show_reg = FALSE, save_img = FALSE) {
+    coach_filtered <- graph_data %>%
+        filter(
+           (coach_name == name)
+           & (season %in% seasons)
+        )
     p <- ggplot(coach_filtered, aes(x = play_num, y = diff)) +
         geom_point() +
         theme_fivethirtyeight() +
@@ -57,7 +61,7 @@ create_coach_chart <- function(name, show_reg = FALSE) {
             x = "Number of Snaps",
             y = "Average Residual from Career EPA/Play",
             title = glue("How Long Does It Take for a Coach's EPA/Play to Stabilize?"),
-            subtitle = glue("Selected coach: {name} - Data from {min(seasons)} to {max(seasons)}."),
+            subtitle = glue("Selected coach: {name} - Data from {min(seasons)} to {max(seasons)} with win probability btwn 10% and 90%."),
             caption = glue("Created by Akshay Easwaran (@akeaswaran), based on QB chart from Conor McQuiston (@ConorMCQ5). Data from @cfbfastR.")
         )
 
@@ -98,6 +102,9 @@ create_coach_chart <- function(name, show_reg = FALSE) {
 
     p <- p + geom_text(data = ann_text, aes(x = x, y = y, label = lab), size = 3, angle = 90)
     p <- p + geom_cfb_logos(data = ann_text, aes(x = team_x, y = y, team = team, alpha = 1.0), width = 0.0625)
+    if (save_img) {
+        ggsave(plot = p, filename = glue("epa-prog-{name}.jpg"), width=10.4,height=6.25, dpi=320)
+    }
     p
 }
-create_coach_chart(name = "Geoff Collins")
+create_coach_chart(name = "Geoff Collins", save_img = TRUE)

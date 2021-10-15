@@ -62,7 +62,7 @@ lrbs <- pbp_db %>%
         highlight_yards = sum(highlight_yards)/n_opps,
         pos_team = dplyr::last(pos_team)
     ) %>%
-    filter(n_opps > 25 & n_plays > 100) %>%
+    filter(n_plays > 100) %>%
     mutate(
         lepa = lag(epa, n = 1),
         lunad_epa = lag(unadjusted_epa, n = 1),
@@ -73,11 +73,12 @@ lrbs <- pbp_db %>%
     ) %>% ungroup()
 
 model_data <- lrbs %>%
-    select(unadjusted_epa, lhlite_yds, lepa, weight, season) %>%
+    select(unadjusted_epa, lhlite_yds, lepa, lsuccess, weight, season) %>%
     dplyr::rename(
         target = unadjusted_epa,
         highlight_yards = lhlite_yds,
-        epa_per_play = lepa
+        epa_per_play = lepa,
+        success = lsuccess
     )
 
 rsq <- function (x, y) {
@@ -97,7 +98,7 @@ cv_results <- map_dfr(seasons, function(x) {
         filter(season != x)
 
     dakota_model = mgcv::gam(
-        target ~ s(highlight_yards) + s(epa_per_play), data = train_data, weights = weight
+        target ~ s(highlight_yards) + s(epa_per_play) + s(success), data = train_data, weights = weight
     )
 
     preds <- as.data.frame(

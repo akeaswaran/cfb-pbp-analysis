@@ -4,39 +4,43 @@ library(mgcv)
 library(ggplot2)
 library(glue)
 
-pbp <- data.frame()
-seasons <- 2014:cfbfastR:::most_recent_season()
-progressr::with_progress({
-    future::plan("multisession")
-    pbp <- cfbfastR::load_cfb_pbp(seasons)
+seasons <- 2006:2019
+pbp <- purrr::map_df(seasons, function(x) {
+    # print(glue("loading data for year {x}"))
+    readRDS(
+        url(
+            glue::glue("https://raw.githubusercontent.com/saiemgilani/cfbfastR-data/master/pbp/rds/play_by_play_{x}.rds")
+        )
+    )
+    # print(glue("downloaded data for year {x}"))
 })
 
 pbp_db <- pbp %>%
-    select(game_id, play_text, yards_gained, distance, rusher_player_name, down, season, week, home_wp_before, pos_team, def_pos_team, pass, rush, EPA, success) %>%
+    select(game_id, text, yds_rushed, start_ydstogo, rusher_player_name, start_down, season, week, home_wp_before, posteam, rush, epa) %>%
     filter(rush == 1) %>%
-    filter(!is.na(pos_team) & !is.na(EPA) & !is.na(rusher_player_name)) %>%
+    filter(!is.na(posteam) & !is.na(epa) & !is.na(rusher_player_name) & season >= 2006 & season <= 2019) %>%
     filter((rusher_player_name != "TEAM")) %>%
     mutate(
         fo_success = case_when(
-            (down == 1) ~ (yards_gained >= 0.5 * distance),
-            (down == 2) ~ (yards_gained >= 0.7 * distance),
-            (down >= 3) ~ (yards_gained >= distance),
+            (start_down == 1) ~ (yds_rushed >= 0.5 * start_ydstogo),
+            (start_down == 2) ~ (yds_rushed >= 0.7 * start_ydstogo),
+            (start_down >= 3) ~ (yds_rushed >= start_ydstogo),
             TRUE ~ FALSE
         ),
-        is_rush_opp = (yards_gained >= 4),
-        adj_yardage = ifelse(yards_gained > 10, 10, yards_gained),
+        is_rush_opp = (yds_rushed >= 4),
+        adj_yardage = ifelse(yds_rushed > 10, 10, yds_rushed),
         line_yards = case_when(
-            (yards_gained < 0) ~ (1.20 * adj_yardage),
-            (yards_gained %in% range(0, 4)) ~ adj_yardage,
-            (yards_gained >= 5) ~ (0.5 * adj_yardage),
+            (yds_rushed < 0) ~ (1.20 * adj_yardage),
+            (yds_rushed %in% range(0, 4)) ~ adj_yardage,
+            (yds_rushed >= 5) ~ (0.5 * adj_yardage),
             TRUE ~ 0
         ),
         second_level_yards = case_when(
-            (yards_gained >= 5) ~ (0.5 * (adj_yardage - 5)),
+            (yds_rushed >= 5) ~ (0.5 * (adj_yardage - 5)),
             TRUE ~ 0
         ),
         open_field_yards = case_when(
-            (yards_gained > 10) ~ (yards_gained - adj_yardage),
+            (yds_rushed > 10) ~ (yds_rushed - adj_yardage),
             TRUE ~ 0
         ),
         highlight_yards = second_level_yards + open_field_yards
@@ -50,17 +54,17 @@ pbp_db <- pbp %>%
 lrbs <- pbp_db %>%
     group_by(rusher_player_name, season) %>%
     mutate(
-        unadjusted_epa = EPA,
-        epa = if_else(EPA < -4.5, -4.5, EPA)
+        unadjusted_epa = epa,
+        epa = if_else(epa < -4.5, -4.5, epa)
     ) %>%
     summarize(
         n_opps = sum(is_rush_opp),
         n_plays = n(),
         unadjusted_epa = sum(unadjusted_epa) / n_plays,
-        epa = sum(EPA)/n_plays,
+        epa = sum(epa)/n_plays,
         success =sum(fo_success)/n_plays,
         highlight_yards = sum(highlight_yards)/n_opps,
-        pos_team = dplyr::last(pos_team)
+        posteam = dplyr::last(posteam)
     ) %>%
     filter(n_plays > 100) %>%
     mutate(
@@ -98,7 +102,7 @@ cv_results <- map_dfr(seasons, function(x) {
         filter(season != x)
 
     dakota_model = mgcv::gam(
-        target ~ s(highlight_yards) + s(epa_per_play) + s(success), data = train_data, weights = weight
+        target ~ s(epa_per_play) + s(success), data = train_data, weights = weight
     )
 
     preds <- as.data.frame(
@@ -128,10 +132,10 @@ show_calibration_chart <- function(bin_size) {
             bin_actual_epa = avg_epa
         )
 
-    y_max = 0.25 # max(calibration_results$bin_actual_epa)
-    y_min = -0.25 # min(calibration_results$bin_actual_epa)
-    x_max = 0.25 # max(calibration_results$bin_pred_epa)
-    x_min = -0.25 # min(calibration_results$bin_pred_epa)
+    y_max = max(calibration_results$bin_actual_epa)
+    y_min = min(calibration_results$bin_actual_epa)
+    x_max = max(calibration_results$bin_pred_epa)
+    x_min = min(calibration_results$bin_pred_epa)
 
     cal_error <- calibration_results %>%
         ungroup() %>%
@@ -141,16 +145,16 @@ show_calibration_chart <- function(bin_size) {
         )
 
     ann_text <- data.frame(
-        x = c(-0.125, 0.125),
-        y = c(0.125, -0.125),
+        x = c((0.25 * (x_max - x_min) + x_min), 0.75 * (x_max - x_min) + x_min),
+        y = c((0.75 * (y_max - y_min) + y_min), 0.25 * (y_max - y_min) + y_min),
         lab = c("Higher\nthan predicted", "Lower\nthan predicted")
     )
 
     r2 <- r2w(calibration_results$bin_actual_epa, calibration_results$bin_pred_epa, calibration_results$total_instances)
 
     cal_text <- data.frame(
-        x = c(0.1875),
-        y = c(-0.225),
+        x = c(0.75 * (x_max - x_min) + x_min),
+        y = c(0.125 * (y_max - y_min) + y_min),
         lab = c(glue("Wgt Cal Error: {round(cal_error$weight_cal_error, 4)}\nWgt R^2: {round(r2, 4)}"))
     )
 
@@ -171,4 +175,4 @@ show_calibration_chart <- function(bin_size) {
         ylim(y_min, y_max) +
         theme_bw()
 }
-show_calibration_chart(bin_size = 0.025)
+show_calibration_chart(bin_size = 0.05)

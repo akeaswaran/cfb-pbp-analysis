@@ -25,9 +25,11 @@ fbs_game_info = games %>%
         & away_division == "fbs"
     )
 
-fbs_games = plays %>%
+fbs_plays = plays %>%
     dplyr::filter(game_id %in% fbs_game_info$game_id) %>%
-    dplyr::filter(pass == 1 | rush == 1) %>%
+    dplyr::filter(pass == 1 | rush == 1)
+
+fbs_games = fbs_plays %>%
     dplyr::group_by(season = year, game_id, pos_team) %>%
     dplyr::summarize(
         Plays = dplyr::n(),
@@ -599,3 +601,424 @@ top_exp_ranks %>%
     save_crop_gt("23_top_exp_ranks.png")
 bottom_exp_ranks %>%
     save_crop_gt("23_bottom_exp_ranks.png")
+
+
+# Pass Rate down/distance
+fbs_plays %>%
+    dplyr::filter(
+        down %in% c(1:4)
+        & distance <= 15
+        & distance >= 0
+        & wp_before >= 0.25
+        & wp_before <= 0.75
+    ) %>%
+    dplyr::mutate(down = as.factor(down)) %>%
+    dplyr::group_by(down, distance) %>%
+    dplyr::summarize(
+        count = dplyr::n(),
+        dropback_rate = mean(`pass`, na.rm = T) * 100
+    ) %>%
+    dplyr::ungroup() %>%
+    ggplot2::ggplot(ggplot2::aes(x = distance, y = dropback_rate, color = down)) +
+    ggplot2::geom_hline(yintercept = 50, color = "black") +
+    ggplot2::geom_point(ggplot2::aes(size = count)) +
+    ggplot2::geom_smooth(method = "loess", se = F) +
+    ggplot2::ylim(0, 100) +
+    ggplot2::labs(
+        x = "Distance",
+        y = "Dropback %",
+        color = "Down",
+        size = "# of Plays",
+        title = "Examining Situational Dropback Rates",
+        subtitle = "2014 to 2023 seasons. Offense WP% between 25% and 75%.",
+        caption = "Data from @cfbfastR. Scrimmage plays only."
+    ) +
+    ggplot2::theme(
+        plot.title = ggplot2::element_text(face = "bold")
+    )
+
+ggsave(
+    filename = "~/Desktop/dropback_down.png",
+    plot = ggplot2::last_plot(),
+    dpi = 300,
+    width = 900,
+    height = 500,
+    units = "px",
+    scale = 3
+)
+
+
+# EPA down/distance
+
+valid_plays = fbs_plays %>%
+    dplyr::filter(
+        down %in% c(1:4)
+        & distance <= 15
+        & distance >= 0
+        & wp_before >= 0.25
+        & wp_before <= 0.75
+        & yards_gained <= 100 # eliminate that one dumb penalty from our analysis
+    )
+
+valid_plays %>%
+    dplyr::mutate(
+        playcall = dplyr::case_when(
+            `pass` == 1 ~ "Pass",
+            .default = "Rush"
+        ),
+        total = dplyr::n()
+    ) %>%
+    dplyr::group_by(playcall) %>%
+    dplyr::summarize(
+        count = dplyr::n(),
+        pct_total = count / dplyr::last(total),
+        avg_yards = mean(yards_gained, na.rm = T),
+        avg_EPA = mean(`EPA`, na.rm = T)
+    ) %>%
+    dplyr::ungroup() %>%
+    gt::gt() %>%
+    gtExtras::gt_theme_538() %>%
+    gt::cols_label(
+        "pct_total" = "%",
+        "avg_yards" = "Avg Yds",
+        "avg_EPA" = "Avg EPA"
+    ) %>%
+    gt::cols_align(
+        columns = count,
+        align = "center"
+    ) %>%
+    gt::tab_style(
+        locations = gt::cells_body(
+            columns = playcall
+        ),
+        style = gt::cell_text(
+            weight = "bold"
+        )
+    ) %>%
+    gt::fmt_percent(
+        columns = pct_total,
+        decimals = 1
+    ) %>%
+    gt::fmt_number(
+        columns = c(avg_yards, avg_EPA),
+        decimals = 2
+    ) %>%
+    gt::cols_merge_n_pct(count, pct_total) %>%
+    gt::tab_source_note(source_note = gt::md(
+        "FBS vs FBS games only, offense WP% between 25% and 75%.<br/>Data from cfbfastR. Table assembled by @akeaswaran."
+    )) %>%
+    gt::tab_header(
+        title = gt::md("**Examining Playcall EPA**"),
+        subtitle = gt::md("2014 to 2023 seasons")
+    ) %>%
+    save_crop_gt("playcall_table.png")
+
+
+valid_plays %>%
+    dplyr::mutate(down = as.factor(down)) %>%
+    dplyr::group_by(down, distance, `pass`) %>%
+    dplyr::summarize(
+        count = dplyr::n(),
+        avg_EPA = mean(`EPA`, na.rm = T)
+    ) %>%
+    dplyr::ungroup() %>%
+    dplyr::mutate(
+        playcall = dplyr::case_when(
+            `pass` == 1 ~ "Pass",
+            .default = "Rush"
+        ),
+        down = paste0("Down ", down)
+    ) %>%
+    ggplot2::ggplot(ggplot2::aes(x = distance, y = avg_EPA, color = playcall)) +
+    ggplot2::geom_point(ggplot2::aes(size = count)) +
+    ggplot2::geom_smooth(method = "loess", se = F) +
+    ggplot2::facet_wrap(~ `down`) +
+    ggplot2::labs(
+        x = "Distance",
+        y = "Avg EPA",
+        color = "Playcall",
+        size = "# of Plays",
+        title = "Examining Situational EPA",
+        subtitle = "2014 to 2023 seasons. Offense WP% between 25% and 75%.",
+        caption = "Data from @cfbfastR. Scrimmage plays only. Plot assembled by @akeaswaran."
+    ) +
+    ggplot2::theme(
+        plot.title = ggplot2::element_text(face = "bold")
+    )
+ggsave(
+    filename = "~/Desktop/avg_epa_playcall.png",
+    plot = ggplot2::last_plot(),
+    dpi = 300,
+    width = 900,
+    height = 500,
+    units = "px",
+    scale = 3
+)
+
+# win prob
+fbs_plays %>%
+    dplyr::filter(
+        down %in% c(1:4)
+        & !is.na(wp_before)
+    ) %>%
+    dplyr::mutate(
+        bin_win_prob = round(wp_before / 0.05) * .05,
+    ) %>%
+    dplyr::group_by(bin_win_prob) %>%
+    # mutate(correct = if_else(label == T, 1, 0)) %>%
+    dplyr::summarize(
+        count = dplyr::n(),
+        dropback_rate = mean(`pass`, na.rm = T) * 100
+    ) %>%
+    dplyr::ungroup() %>%
+    ggplot2::ggplot(ggplot2::aes(x = bin_win_prob * 100, y = dropback_rate)) +
+    # ggplot2::geom_point(ggplot2::aes(size = count)) +
+    ggplot2::geom_smooth(method = "loess") +
+    # ggplot2::facet_wrap(~ `down`) +
+    ggplot2::labs(
+        x = "Win probability % before the play",
+        y = "Dropback %",
+        # color = "Playcall",
+        # size = "# of Plays",
+        title = "Examining Situational Dropback Rates",
+        subtitle = "2014 to 2023 seasons",
+        caption = "Data from @cfbfastR. Scrimmage plays only.<br/>Chart based on NFL version created by @CowboysStats. Plot assembled by @akeaswaran."
+    ) +
+    ggplot2::theme(
+        plot.title = ggplot2::element_text(face = "bold"),
+        plot.caption = ggtext::element_markdown()
+    )
+ggsave(
+    filename = "~/Desktop/dropback_game_state.png",
+    plot = ggplot2::last_plot(),
+    dpi = 300,
+    width = 900,
+    height = 500,
+    units = "px",
+    scale = 3
+)
+
+
+# passing rushing histograms
+#
+valid_plays %>%
+    dplyr::filter(
+        yards_gained < 50
+        & yards_gained > -50
+        & (
+            (`pass` == 1 & !is.na(completion_player))
+            | rush == 1
+        )
+    ) %>%
+    dplyr::mutate(
+        playcall = dplyr::case_when(
+            `pass` == 1 ~ "Pass",
+            .default = "Rush"
+        ),
+        # total = dplyr::n()
+    ) %>%
+    ggplot2::ggplot(ggplot2::aes(x = yards_gained, color = playcall, fill = playcall)) +
+    ggplot2::geom_density(alpha = 0.5) +
+    # ggplot2::facet_wrap(~ `down`) +
+    ggplot2::labs(
+        x = "Yards Gained on Play",
+        y = "Density",
+        color = "Playcall",
+        fill = "Playcall",
+        # size = "# of Plays",
+        title = "Examining Playcall Rates",
+        subtitle = "2014 to 2023 seasons, completed passes and rushes only. ",
+        caption = "Data from @cfbfastR. Plot assembled by @akeaswaran."
+    ) +
+    ggplot2::theme(
+        plot.title = ggplot2::element_text(face = "bold"),
+        plot.caption = ggtext::element_markdown()
+    )
+
+ggsave(
+    filename = "~/Desktop/playcall_density.png",
+    plot = ggplot2::last_plot(),
+    dpi = 300,
+    width = 900,
+    height = 500,
+    units = "px",
+    scale = 3
+)
+
+# R-squared analysis
+
+metrics <- fbs_plays %>%
+    dplyr::filter(
+        (`pass` == 1 & !is.na(EPA))
+        | (rush == 1 & !is.na(EPA))
+    ) %>%
+    dplyr::group_by(season, pos_team) %>%
+    summarize(
+        n_pass = sum(`pass`),
+        n_rush = sum(rush),
+        pass_yards = sum(yards_gained*`pass`, na.rm = TRUE),
+        rush_yards = sum(yards_gained*rush, na.rm = TRUE),
+        epa_per_pass = sum(EPA*`pass`)/n_pass,
+        epa_per_rush = sum(EPA*rush)/n_rush,
+        success_per_pass = sum(`pass`*EPA>0)/n_pass,
+        success_per_rush = sum(rush*EPA>0)/n_rush,
+        y_per_pass = sum(yards_gained*`pass`, na.rm = TRUE)/n_pass,
+        y_per_rush = sum(yards_gained*rush, na.rm = TRUE)/n_rush
+    ) %>%
+    left_join(
+        fbs_plays %>%
+            dplyr::filter(
+                (`pass` == 1 & !is.na(EPA))
+                | (rush == 1 & !is.na(EPA))
+            ) %>%
+            group_by(season, def_pos_team) %>%
+            summarize(
+                def_n_pass=sum(`pass`),
+                def_n_rush=sum(rush),
+                def_pass_yards = sum(yards_gained * `pass`, na.rm = TRUE),
+                def_rush_yards = sum(yards_gained * rush, na.rm = TRUE),
+                def_epa_per_pass=sum(-EPA*`pass`)/def_n_pass,
+                def_epa_per_rush=sum(-EPA*rush)/def_n_rush,
+                def_success_per_pass=sum(`pass`*EPA>0)/def_n_pass,
+                def_success_per_rush=sum(rush*EPA>0)/def_n_rush,
+                def_y_per_pass = sum(yards_gained*`pass`, na.rm = TRUE)/def_n_pass,
+                def_y_per_rush = sum(yards_gained*rush, na.rm = TRUE)/def_n_rush
+            ),
+        by = c("season", "pos_team" = "def_pos_team")
+    ) %>%
+    rename(team = "pos_team") %>%
+    select(-n_pass, -n_rush, -def_n_pass, -def_n_rush)
+
+outcomes <- fbs_game_info %>%
+    dplyr::mutate(
+        result = home_points - away_points
+    ) %>%
+    group_by(season, game_id, home_team) %>%
+    summarize(
+        home_win = if_else(sum(result) > 0, 1, 0),
+        home_tie = if_else(sum(result) == 0, 1, 0),
+        home_diff = last(result),
+        home_pts_for = last(home_points),
+        home_pts_against = last(away_points)
+    ) %>%
+    group_by(season, home_team) %>%
+    summarize(
+        home_games = n(),
+        home_wins = sum(home_win),
+        home_ties = sum(home_tie),
+        home_diff = sum(home_diff),
+        home_pts_for = sum(home_pts_for),
+        home_pts_against = sum(home_pts_against)
+    ) %>%
+    ungroup() %>%
+    left_join(
+        # away games
+        fbs_game_info %>%
+            dplyr::mutate(
+                result = home_points - away_points
+            ) %>%
+            group_by(season, game_id, away_team) %>%
+            summarize(
+                away_win = if_else(sum(result) < 0, 1, 0),
+                away_tie = if_else(sum(result) == 0, 1, 0),
+                away_diff = last(result)*-1,
+                away_pts_for = last(away_points),
+                away_pts_against = last(home_points)
+            ) %>%
+            group_by(season, away_team) %>%
+            summarize(
+                away_games = n(),
+                away_wins = sum(away_win),
+                away_ties = sum(away_tie),
+                away_diff = sum(away_diff),
+                away_pts_for = sum(away_pts_for),
+                away_pts_against = sum(away_pts_against)
+            ) %>%
+            ungroup(),
+        by = c("season", "home_team" = "away_team")
+    ) %>%
+    rename(team = "home_team") %>%
+    mutate(
+        games = home_games + away_games,
+        wins = home_wins + away_wins,
+        losses = games - wins,
+        ties = home_ties + away_ties,
+        win_percentage = (wins + 0.5 * ties) / games,
+        point_diff = home_diff + away_diff,
+        points_for = home_pts_for + away_pts_for,
+        points_against = home_pts_against + away_pts_against,
+        pythag_wins = (points_for^2.37 / (points_for^2.37 + points_against^2.37))*16
+    ) %>%
+    select(
+        season, team, games, wins, losses, ties, win_percentage, point_diff, points_for, points_against, pythag_wins
+    )
+
+
+df <- outcomes %>%
+    left_join(metrics, by = c("season", "team"))
+
+source("./regression_code.R")
+
+r_squareds <- c()
+
+# Loop through variables and store results
+for(i in 12:27) {
+    input = colnames(df)[i]
+    fit <- lm(data = df, wins ~ get(input))
+    crit <- aa_critique_fit(fit)
+    r2 <- crit$R2
+    r_squareds = rbind(r_squareds, data.frame(input, r2))
+}
+
+r_squareds$metric <- c(
+    "Pass Yards",
+    "Rush Yards",
+    "EPA per Dropback",
+    "EPA per Rush",
+    "Success Rate per Dropback",
+    "Success Rate per Rush",
+    "Yards per Dropback",
+    "Yards per Rush",
+    "Pass Yards Allowed",
+    "Rush Yards Allowed",
+    "Def EPA per Dropback",
+    "Def EPA per Rush",
+    "Def Success Rate per Dropback",
+    "Def Success Rate per Rush",
+    "Def Yards per Dropback",
+    "Def Yards per Rush")
+
+r_squareds %>%
+    ggplot(aes(x = reorder(metric, r2), y = r2)) +
+    geom_bar(stat = "identity", fill = "royal blue") +
+    ylim(0, 0.5) +
+    coord_flip() +
+    labs(
+        title = "R-Squared of Simple Linear Regressions",
+        subtitle = "Wins Regressed on Individual Metrics | 2014 to 2023 FBS Seasons | FBS vs FBS games only",
+        x = element_blank(),
+        y = "R-Squared",
+        caption = "Data from @cfbfastR. Chart/code from NFL version on OpenSourceFootball.com. Assembled by @akeaswaran."
+    ) +
+    theme(
+        plot.title = element_text(size = 16,
+                                  hjust = 0.5,
+                                  face = "bold",
+                                  color = "black"),
+        plot.subtitle = element_text(size = 10,
+                                     hjust = 0.5,
+                                     color = "black"),
+        axis.title = element_text(size = 12,
+                                  color = "black"),
+        axis.text = element_text(size = 10,
+                                 color = "black"))
+
+ggsave(
+    filename = "~/Desktop/regressions.png",
+    plot = ggplot2::last_plot(),
+    dpi = 300,
+    width = 900,
+    height = 500,
+    units = "px",
+    scale = 3
+)

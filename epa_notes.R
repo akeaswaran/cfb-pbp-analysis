@@ -732,6 +732,7 @@ valid_plays %>%
     ggplot2::ggplot(ggplot2::aes(x = distance, y = avg_EPA, color = playcall)) +
     ggplot2::geom_point(ggplot2::aes(size = count)) +
     ggplot2::geom_smooth(method = "loess", se = F) +
+    ggplot2::ylim(-1, 1) +
     ggplot2::facet_wrap(~ `down`) +
     ggplot2::labs(
         x = "Distance",
